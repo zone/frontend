@@ -1,4 +1,4 @@
-# stylelint-config-zone
+# @zonedigital/stylelint-config-zone
 
 [![npm][npm-image]][npm-url] [![downloads][downloads-image]][npm-url]
 
@@ -6,7 +6,7 @@
 [npm-url]: https://npmjs.org/package/@zonedigital/stylelint-config-zone
 [downloads-image]: https://img.shields.io/npm/dm/@zonedigital/stylelint-config-zone.svg?style=flat-square
 
-This package provides Zone's `.stylelintrc` as an extensible shared config.
+This package provides Zone's CSS style guide as an extensible shared config.
 
 ## Installation
 
@@ -22,13 +22,13 @@ This package provides Zone's `.stylelintrc` as an extensible shared config.
 
 **.stylelintrc**
 
-Add the Zone config to your `.stylelintrc` file.
+Add the Zone config to your stylelint config.
 
 ```javascript
 {
-  "extends": "@zonedigital/stylelint-config-zone",
-  // ... existing config here ...
+  "extends": ["@zonedigital/stylelint-config-zone"],
+  // ... config here ...
 }
 ```
 
-**Optional but recommended:** Remove duplicated rules from your `.stylelintrc` file. See the `index.js` file in this repo for the default Zone config.
+**Optional but recommended:** Remove duplicated rules from your stylelint config.

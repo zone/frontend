@@ -1,4 +1,4 @@
-# eslint-config-zone
+# @zonedigital/eslint-config-zone
 
 [![npm][npm-image]][npm-url] [![downloads][downloads-image]][npm-url]
 
@@ -6,7 +6,7 @@
 [npm-url]: https://npmjs.org/package/@zonedigital/eslint-config-zone
 [downloads-image]: https://img.shields.io/npm/dm/@zonedigital/eslint-config-zone.svg?style=flat-square
 
-This package provides Zone's `.eslintrc` as an extensible shared config.
+This package provides Zone's JavaScript style guide as an extensible shared config.
 
 ## Installation
 
@@ -22,13 +22,13 @@ This package provides Zone's `.eslintrc` as an extensible shared config.
 
 **.eslintrc**
 
-Add the Zone config to your `.eslintrc` file.
+Add the Zone rules to your Eslint config.
 
 ```javascript
 {
-  "extends": "@zonedigital/eslint-config-zone",
-  // ... existing config here ...
+  "extends": ["@zonedigital/eslint-config-zone"],
+  // ... config here ...
 }
 ```
 
-**Optional but recommended:** Remove duplicated rules from your `.eslintrc` file. See the `index.js` file in this repo for the default Zone config.
+**Optional but recommended:** Remove duplicated rules from your Eslint config.
