@@ -1,8 +1,7 @@
 {
   "name": "@zonedigital/stylelint-config-zone",
-  "version": "2.0.1",
-  "description":
-    "This package provides Zone's CSS style guide as an extensible shared config.",
+  "version": "2.0.2",
+  "description": "This package provides Zone's CSS style guide as an extensible shared config.",
   "main": "index.js",
   "repository": "git@github.com:zone/frontend.git",
   "author": "Mike Simmonds <mike@simmo.me> (https://simmo.me)",
@@ -10,11 +9,14 @@
   "bugs": {
     "url": "https://github.com/zone/frontend/issues"
   },
-  "homepage":
-    "https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone#readme",
+  "homepage": "https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone#readme",
   "dependencies": {
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0"
   },
-  "keywords": ["stylelint", "stylelint-config", "stylelintrc"]
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "stylelintrc"
+  ]
 }
