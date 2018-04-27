@@ -10,10 +10,11 @@ Mono repo for Zone's frontend setup and tooling.
 
 See `./packages/*` for individual package installation details.
 
-| Package                 | Description                 |
-| ----------------------- | --------------------------- |
-| [eslint-config-zone]    | Base JavaScript style guide |
-| [stylelint-config-zone] | Base CSS style guide        |
+| Package                 | Description                     |
+| ----------------------- | ------------------------------- |
+| [eslint-config-vue]     | Base+Vue JavaScript style guide |
+| [eslint-config-zone]    | Base JavaScript style guide     |
+| [stylelint-config-zone] | Base CSS style guide            |
 
 ## Maintenance
 
@@ -21,6 +22,7 @@ This repo is managed with [Lerna][url-lerna] and [Yarn workspaces][url-yarn-work
 
 This repo has been setup with fixed verisoning, in other words, all packages have the same version number. Bump a major release on one package will cause a major bump on all other packages.
 
+[eslint-config-vue]: https://github.com/zone/frontend/tree/master/packages/eslint-config-vue
 [eslint-config-zone]: https://github.com/zone/frontend/tree/master/packages/eslint-config-zone
 [stylelint-config-zone]: https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone
 [img-lerna]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square
