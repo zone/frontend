@@ -8,6 +8,8 @@
 
 This package provides Zone's CSS style guide as an extensible shared config.
 
+It is part of [Zone Frontend](https://github.com/zone/frontend).
+
 ## Installation
 
 ### Yarn
@@ -19,8 +21,6 @@ This package provides Zone's CSS style guide as an extensible shared config.
 `npm i @zonedigital/stylelint-config-zone`
 
 ## Usage
-
-**.stylelintrc**
 
 Add the Zone config to your stylelint config.
 

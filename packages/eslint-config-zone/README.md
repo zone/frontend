@@ -8,6 +8,8 @@
 
 This package provides Zone's JavaScript style guide as an extensible shared config.
 
+It is part of [Zone Frontend](https://github.com/zone/frontend).
+
 ## Installation
 
 ### Yarn
@@ -19,8 +21,6 @@ This package provides Zone's JavaScript style guide as an extensible shared conf
 `npm i @zonedigital/eslint-config-zone`
 
 ## Usage
-
-**.eslintrc**
 
 Add the Zone rules to your Eslint config.
 

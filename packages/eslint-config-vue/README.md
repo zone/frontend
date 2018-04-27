@@ -8,6 +8,8 @@
 
 This package provides Zone's JavaScript style guide for Vue as an extensible shared config.
 
+It is part of [Zone Frontend](https://github.com/zone/frontend).
+
 ## Installation
 
 ### Yarn
@@ -19,8 +21,6 @@ This package provides Zone's JavaScript style guide for Vue as an extensible sha
 `npm i @zonedigital/eslint-config-vue`
 
 ## Usage
-
-**.eslintrc**
 
 Add the Zone rules to your Eslint config.
 
