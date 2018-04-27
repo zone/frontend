@@ -1,0 +1,15 @@
+{
+  "extends": ["@zonedigital/eslint-config-zone", "plugin:vue/recommended"],
+  "rules": {
+    "vue/max-attributes-per-line": [
+      2,
+      {
+        "singleline": 3,
+        "multiline": {
+          "max": 4,
+          "allowFirstLine": true
+        }
+      }
+    ]
+  }
+}
