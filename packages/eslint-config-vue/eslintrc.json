@@ -1,5 +1,5 @@
 {
-  "extends": ["@zonedigital/eslint-config-zone", "plugin:vue/recommended"],
+  "extends": ["plugin:vue/recommended", "@zonedigital/eslint-config-zone"],
   "rules": {
     "vue/max-attributes-per-line": [
       2,
