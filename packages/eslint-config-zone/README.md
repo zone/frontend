@@ -10,6 +10,18 @@ This package provides Zone's JavaScript style guide as an extensible shared conf
 
 It is part of [Zone Frontend](https://github.com/zone/frontend).
 
+## Requirements
+
+As this package is a config, you'll need to ensure you've installed any peer dependencies.
+
+### Yarn
+
+`yarn add eslint eslint-plugin-import`
+
+### NPM
+
+`npm i eslint eslint-plugin-import`
+
 ## Installation
 
 ### Yarn

@@ -10,14 +10,20 @@
     "url": "https://github.com/zone/frontend/issues"
   },
   "homepage": "https://github.com/zone/frontend/tree/master/packages/eslint-config-zone#readme",
-  "dependencies": {
-    "eslint": "^4.0.0",
-    "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-plugin-import": "^2.7.0"
-  },
   "keywords": [
     "eslint",
     "eslint-config",
     "eslintrc"
-  ]
+  ],
+  "dependencies": {
+    "eslint-config-airbnb-base": "^12.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-plugin-import": "^2.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-plugin-import": "^2.0.0"
+  }
 }

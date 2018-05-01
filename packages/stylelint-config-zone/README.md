@@ -10,6 +10,18 @@ This package provides Zone's CSS style guide as an extensible shared config.
 
 It is part of [Zone Frontend](https://github.com/zone/frontend).
 
+## Requirements
+
+To use this package you'll first need to install a few peer dependencies.
+
+### Yarn
+
+`yarn add stylelint`
+
+### NPM
+
+`npm i stylelint`
+
 ## Installation
 
 ### Yarn

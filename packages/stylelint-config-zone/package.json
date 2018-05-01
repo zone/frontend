@@ -10,13 +10,18 @@
     "url": "https://github.com/zone/frontend/issues"
   },
   "homepage": "https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone#readme",
-  "dependencies": {
-    "stylelint": "^9.2.0",
-    "stylelint-config-standard": "^18.2.0"
-  },
   "keywords": [
     "stylelint",
     "stylelint-config",
     "stylelintrc"
-  ]
+  ],
+  "dependencies": {
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "devDependencies": {
+    "stylelint": "^9.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^9.0.0"
+  }
 }

@@ -10,6 +10,18 @@ This package provides Zone's JavaScript style guide for Vue as an extensible sha
 
 It is part of [Zone Frontend](https://github.com/zone/frontend).
 
+## Requirements
+
+As this package is a config, you'll need to ensure you've installed any peer dependencies.
+
+### Yarn
+
+`yarn add eslint eslint-plugin-import eslint-plugin-vue`
+
+### NPM
+
+`npm i eslint eslint-plugin-import eslint-plugin-vue`
+
 ## Installation
 
 ### Yarn
