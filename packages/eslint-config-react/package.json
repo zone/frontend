@@ -1,0 +1,32 @@
+{
+  "name": "@zonedigital/eslint-config-react",
+  "version": "2.0.3",
+  "description": "This package provides Zone's JavaScript style guide for React as an extensible shared config.",
+  "main": "index.js",
+  "repository": "git@github.com:zone/frontend.git",
+  "author": "Mike Simmonds <mike@simmo.me> (https://simmo.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zone/frontend/issues"
+  },
+  "homepage": "https://github.com/zone/frontend/tree/master/packages/eslint-config-react#readme",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintrc",
+    "react"
+  ],
+  "dependencies": {
+    "@zonedigital/eslint-config-zone": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-react": "^7.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-react": "^7.0.0"
+  }
+}

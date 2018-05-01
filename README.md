@@ -10,11 +10,12 @@ Mono repo for Zone's frontend setup and tooling.
 
 See `./packages/*` for individual package installation details.
 
-| Package                 | Description                     |
-| ----------------------- | ------------------------------- |
-| [eslint-config-vue]     | Base+Vue JavaScript style guide |
-| [eslint-config-zone]    | Base JavaScript style guide     |
-| [stylelint-config-zone] | Base CSS style guide            |
+| Package                 | Description                       |
+| ----------------------- | --------------------------------- |
+| [eslint-config-react]   | Base+React JavaScript style guide |
+| [eslint-config-vue]     | Base+Vue JavaScript style guide   |
+| [eslint-config-zone]    | Base JavaScript style guide       |
+| [stylelint-config-zone] | Base CSS style guide              |
 
 ## Maintenance
 
@@ -24,6 +25,7 @@ This repo has been setup with fixed verisoning, in other words, all packages hav
 
 Be sure to check that all the [Travis CI][url-travis] build jobs have passed.
 
+[eslint-config-react]: https://github.com/zone/frontend/tree/master/packages/eslint-config-react
 [eslint-config-vue]: https://github.com/zone/frontend/tree/master/packages/eslint-config-vue
 [eslint-config-zone]: https://github.com/zone/frontend/tree/master/packages/eslint-config-zone
 [stylelint-config-zone]: https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone
