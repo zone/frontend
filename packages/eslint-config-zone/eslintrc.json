@@ -1,15 +1,5 @@
 {
   "extends": "airbnb-base",
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
-  },
-  "env": {
-    "browser": true,
-    "es6": true
-  },
   "rules": {
     "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
     "complexity": ["error", 10],
