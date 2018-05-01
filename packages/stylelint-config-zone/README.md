@@ -12,7 +12,7 @@ It is part of [Zone Frontend](https://github.com/zone/frontend).
 
 ## Requirements
 
-To use this package you'll first need to install a few peer dependencies.
+As this package is a config, you'll need to ensure you've installed any peer dependencies.
 
 ### Yarn
 
