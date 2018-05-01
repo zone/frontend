@@ -1,5 +1,4 @@
-const CLIEngine = require('eslint').CLIEngine
-const path = require('path')
+const { CLIEngine } = require('eslint')
 
 describe('Validate config', () => {
   it('should not error', () => {

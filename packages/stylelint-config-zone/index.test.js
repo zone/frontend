@@ -6,7 +6,7 @@ describe('Validate config', () => {
 
     const results = stylelint.lint({
       code: 'body { color: #000; }\n',
-      config: require('./index.js'),
+      configFile: require.resolve('./index.js'),
     })
 
     return results.then(data => expect(data.errored).toBeFalsy())
