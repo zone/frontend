@@ -22,6 +22,8 @@ This repo is managed with [Lerna][url-lerna] and [Yarn workspaces][url-yarn-work
 
 This repo has been setup with fixed verisoning, in other words, all packages have the same version number. Bump a major release on one package will cause a major bump on all other packages.
 
+Be sure to check that all the [Travis CI][url-travis] build jobs have passed.
+
 [eslint-config-vue]: https://github.com/zone/frontend/tree/master/packages/eslint-config-vue
 [eslint-config-zone]: https://github.com/zone/frontend/tree/master/packages/eslint-config-zone
 [stylelint-config-zone]: https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone

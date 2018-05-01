@@ -22,13 +22,13 @@ It is part of [Zone Frontend](https://github.com/zone/frontend).
 
 ## Usage
 
-Add the Zone rules to your Eslint config.
+Add the Zone rules to your eslint config. Be sure to add as the last item.
 
 ```javascript
 {
-  "extends": ["@zonedigital/eslint-config-vue"],
-  // ... config here ...
+  "extends": [..., "@zonedigital/eslint-config-vue"],
+  // ... project config here, if any ...
 }
 ```
 
-**Optional but recommended:** Remove duplicated rules from your Eslint config.
+**Optional but recommended:** Remove duplicated rules from your eslint config.

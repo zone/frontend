@@ -22,12 +22,12 @@ It is part of [Zone Frontend](https://github.com/zone/frontend).
 
 ## Usage
 
-Add the Zone config to your stylelint config.
+Add the Zone config to your stylelint config. Be sure to add as the last item.
 
 ```javascript
 {
-  "extends": ["@zonedigital/stylelint-config-zone"],
-  // ... config here ...
+  "extends": [..., "@zonedigital/stylelint-config-zone"],
+  // ... project config here, if any ...
 }
 ```
 
