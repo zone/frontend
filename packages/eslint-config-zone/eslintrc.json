@@ -1,9 +1,14 @@
 {
   "extends": "airbnb-base",
+  "env": {
+    "browser": true
+  },
   "rules": {
     "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
+    "compat/compat": "error",
     "complexity": ["error", 10],
     "curly": ["error", "all"],
     "operator-linebreak": ["error", "after"]
-  }
+  },
+  "plugins": ["compat"]
 }

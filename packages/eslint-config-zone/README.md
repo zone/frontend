@@ -16,11 +16,11 @@ As this package is a config, you'll need to ensure you've installed any peer dep
 
 ### Yarn
 
-`yarn add eslint eslint-plugin-import`
+`yarn add eslint eslint-plugin-compat eslint-plugin-import`
 
 ### NPM
 
-`npm i eslint eslint-plugin-import`
+`npm i eslint eslint-plugin-compat eslint-plugin-import`
 
 ## Installation
 
@@ -42,5 +42,13 @@ Add the Zone rules to your eslint config. Be sure to add as the last item.
   // ... project config here, if any ...
 }
 ```
+
+### Compat
+
+This config uses [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat). It lints the browser compatibility of your code via [Browserslist](https://github.com/browserslist/browserslist).
+
+#### Adding polyfills
+
+If for example you are using `fetch` and it is not supported by all the browsers in your support matrix then you can add a polyfill. To tell the linter you have done this, [add a reference to the polyfill](https://github.com/amilajack/eslint-plugin-compat/wiki/Adding-polyfills).
 
 **Optional but recommended:** Remove duplicated rules from your eslint config.
