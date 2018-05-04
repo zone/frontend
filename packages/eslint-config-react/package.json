@@ -16,6 +16,9 @@
     "eslintrc",
     "react"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@zonedigital/eslint-config-zone": "^2.0.5"
   },

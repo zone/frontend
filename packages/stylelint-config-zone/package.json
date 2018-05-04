@@ -15,6 +15,9 @@
     "stylelint-config",
     "stylelintrc"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "stylelint-config-standard": "^18.2.0"
   },
