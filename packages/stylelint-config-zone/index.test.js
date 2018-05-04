@@ -1,6 +1,7 @@
 const stylelint = require('stylelint')
+const { name: NPM_PACKAGE } = require('./package.json')
 
-describe('Validate config', () => {
+describe(NPM_PACKAGE, () => {
   it('should not error', () => {
     expect.assertions(1)
 
