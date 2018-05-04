@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@zonedigital/browserslist-config should not contain invalid queries 1`] = `
+Array [
+  "and_chr 64",
+  "chrome 65",
+  "edge 16",
+  "firefox 59",
+  "ie 11",
+  "ie_mob 11",
+  "ios_saf 11.3",
+  "ios_saf 11.0-11.2",
+  "ios_saf 10.3",
+  "ios_saf 10.0-10.2",
+  "safari 11.1",
+  "safari 11",
+  "safari 10.1",
+  "safari 10",
+]
+`;
