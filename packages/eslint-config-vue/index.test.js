@@ -1,14 +1,13 @@
 const { CLIEngine } = require('eslint')
+const { name: NPM_PACKAGE } = require('./package.json')
 
-describe('Validate config', () => {
-  it('should not error', () => {
+describe(NPM_PACKAGE, () => {
+  it('should provide a config', () => {
     const cli = new CLIEngine({
       useEslintrc: false,
       configFile: require.resolve('./index.js'),
     })
 
-    const code = 'const foo = true;\nconst bar = function () {};\nbar(foo);\n'
-
-    expect(cli.executeOnText(code).errorCount).toBe(0)
+    expect(cli.getConfigForFile()).toMatchSnapshot()
   })
 })
