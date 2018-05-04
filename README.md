@@ -12,6 +12,7 @@ See `./packages/*` for individual package installation details.
 
 | Package                 | Description                       |
 | ----------------------- | --------------------------------- |
+| [browserslist-config]   | Browserslist browser matrix       |
 | [eslint-config-react]   | Base+React JavaScript style guide |
 | [eslint-config-vue]     | Base+Vue JavaScript style guide   |
 | [eslint-config-zone]    | Base JavaScript style guide       |
@@ -25,6 +26,7 @@ This repo has been setup with fixed verisoning, in other words, all packages hav
 
 Be sure to check that all the [Travis CI][url-travis] build jobs have passed.
 
+[browserslist-config]: https://github.com/zone/frontend/tree/master/packages/browserslist-config
 [eslint-config-react]: https://github.com/zone/frontend/tree/master/packages/eslint-config-react
 [eslint-config-vue]: https://github.com/zone/frontend/tree/master/packages/eslint-config-vue
 [eslint-config-zone]: https://github.com/zone/frontend/tree/master/packages/eslint-config-zone
