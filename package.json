@@ -11,5 +11,10 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "jest-serializer-path"
+    ]
   }
 }

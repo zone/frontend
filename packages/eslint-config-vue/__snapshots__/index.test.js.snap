@@ -8,14 +8,14 @@ Object {
     "node": true,
   },
   "extends": Array [
-    "/Users/msimmonds/Sites/frontend/node_modules/eslint-plugin-vue/lib/configs/strongly-recommended.js",
-    "/Users/msimmonds/Sites/frontend/node_modules/eslint-config-airbnb-base/rules/best-practices.js",
-    "/Users/msimmonds/Sites/frontend/node_modules/eslint-config-airbnb-base/rules/errors.js",
-    "/Users/msimmonds/Sites/frontend/node_modules/eslint-config-airbnb-base/rules/node.js",
-    "/Users/msimmonds/Sites/frontend/node_modules/eslint-config-airbnb-base/rules/style.js",
-    "/Users/msimmonds/Sites/frontend/node_modules/eslint-config-airbnb-base/rules/variables.js",
-    "/Users/msimmonds/Sites/frontend/node_modules/eslint-config-airbnb-base/rules/es6.js",
-    "/Users/msimmonds/Sites/frontend/node_modules/eslint-config-airbnb-base/rules/imports.js",
+    "<PROJECT_ROOT>/node_modules/eslint-plugin-vue/lib/configs/strongly-recommended.js",
+    "<PROJECT_ROOT>/node_modules/eslint-config-airbnb-base/rules/best-practices.js",
+    "<PROJECT_ROOT>/node_modules/eslint-config-airbnb-base/rules/errors.js",
+    "<PROJECT_ROOT>/node_modules/eslint-config-airbnb-base/rules/node.js",
+    "<PROJECT_ROOT>/node_modules/eslint-config-airbnb-base/rules/style.js",
+    "<PROJECT_ROOT>/node_modules/eslint-config-airbnb-base/rules/variables.js",
+    "<PROJECT_ROOT>/node_modules/eslint-config-airbnb-base/rules/es6.js",
+    "<PROJECT_ROOT>/node_modules/eslint-config-airbnb-base/rules/imports.js",
     "airbnb-base",
     "plugin:vue/recommended",
     "@zonedigital/eslint-config-zone",
@@ -891,7 +891,7 @@ Object {
     "visualViewport": false,
     "window": false,
   },
-  "parser": "/Users/msimmonds/Sites/frontend/node_modules/vue-eslint-parser/index.js",
+  "parser": "<PROJECT_ROOT>/node_modules/vue-eslint-parser/index.js",
   "parserOptions": Object {
     "ecmaFeatures": Object {
       "experimentalObjectRestSpread": true,
@@ -2124,7 +2124,7 @@ Object {
     ],
     "import/ignore": Array [
       "node_modules",
-      "\\\\.(coffee|scss|css|less|hbs|svg|json)$",
+      "/.(coffee|scss|css|less|hbs|svg|json)$",
     ],
     "import/resolver": Object {
       "node": Object {
