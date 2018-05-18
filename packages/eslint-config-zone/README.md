@@ -45,7 +45,7 @@ Add the Zone rules to your eslint config. Be sure to add as the last item.
 
 ### Compat
 
-This config uses [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat). It lints the browser compatibility of your code via [Browserslist](https://github.com/browserslist/browserslist).
+This config uses [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat). It lints the browser compatibility of your code via [Browserslist](https://github.com/browserslist/browserslist) (see Zone's [browserslist package](https://github.com/zone/frontend/tree/master/packages/browserslist-config)). Potential browser compatibility issues will be shown as warnings. If you're using babel-env and it is using the same browserslist config to automatically add these polyfills, you can silence the warnings - see [Adding polyfills section](#adding-polyfills) below.
 
 #### Adding polyfills
 
