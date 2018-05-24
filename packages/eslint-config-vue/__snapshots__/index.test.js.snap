@@ -1010,7 +1010,7 @@ Object {
       "error",
       "last",
     ],
-    "compat/compat": "error",
+    "compat/compat": "warn",
     "complexity": Array [
       "error",
       10,

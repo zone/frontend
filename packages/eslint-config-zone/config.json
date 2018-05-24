@@ -5,7 +5,7 @@
   },
   "rules": {
     "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
-    "compat/compat": "error",
+    "compat/compat": "warn",
     "complexity": ["error", 10],
     "curly": ["error", "all"],
     "operator-linebreak": ["error", "after"]
