@@ -6,14 +6,13 @@
 
 ## Introduction
 
-* 🤨 Take your time but limit yourself to 3hrs. Feel free to use a starter kit like [create React app][create-react-app] or [Vue CLI][vue-cli] to save time.
-* 😭 Run out of time? No worries, just think about what you are leaving out and make sure you have enough time to write up your notes.
+* 🤨 Feel free to use a starter kit like [create React app][create-react-app] or [Vue CLI][vue-cli] to save time.
+* 😍 Be sure to write comments and a README. Provide instructions on how to run the project and any notes about your solution.
 * 🤩 Feel free to use a framework, we use React, Vue and plain JavaScript here but use what you’re most comfortable with.
 * 🤗 UI is great but a clean layout and typography will do.
 * 🧐 We’re most interested to see problem solving and your approach… also ES6 please.
 * 😇 Keep it simple, keep it DRY, but don’t over complicate or over engineer, comment and test as much as possible.
 * 🤓 Commit your code to a public Git repository and provide us with the URL.
-* 😬 Provide a README with a simple way to run the project and any notes about your solution.
 
 ## Brief
 
