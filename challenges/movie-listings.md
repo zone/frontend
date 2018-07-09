@@ -6,9 +6,9 @@
 
 ## Introduction
 
-* 🤨 Feel free to use a starter kit like [create React app][create-react-app] or [Vue CLI][vue-cli] to save time.
 * 😍 Be sure to write comments and a README. Provide instructions on how to run the project and any notes about your solution.
-* 🤩 Feel free to use a framework, we use React, Vue and plain JavaScript here but use what you’re most comfortable with.
+* 🤩 Feel free to use a framework. We use React, Vue and plain JavaScript here but use what you’re most comfortable with.
+* 🤨 You can also use a starter kit like [create React app][create-react-app] or [Vue CLI][vue-cli] to save time.
 * 🤗 UI is great but a clean layout and typography will do.
 * 🧐 We’re most interested to see problem solving and your approach… also ES6 please.
 * 😇 Keep it simple, keep it DRY, but don’t over complicate or over engineer, comment and test as much as possible.
