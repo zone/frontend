@@ -4,7 +4,7 @@
   "description": "This package provides Zone's JavaScript style guide as an extensible shared config.",
   "main": "index.js",
   "repository": "git@github.com:zone/frontend.git",
-  "author": "Mike Simmonds <mike@simmo.me> (https://simmo.me)",
+  "author": "Mike Simmonds (https://simmo.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zone/frontend/issues"
@@ -19,16 +19,9 @@
     "access": "public"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.0.2"
-  },
-  "devDependencies": {
-    "eslint": "^4.0.0",
-    "eslint-plugin-compat": "^2.0.0",
-    "eslint-plugin-import": "^2.0.0"
-  },
-  "peerDependencies": {
-    "eslint": "^4.0.0",
-    "eslint-plugin-compat": "^2.0.0",
-    "eslint-plugin-import": "^2.0.0"
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-compat": "^2.5.1",
+    "eslint-plugin-import": "^2.14.0"
   }
 }

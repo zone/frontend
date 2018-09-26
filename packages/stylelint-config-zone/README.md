@@ -10,18 +10,6 @@
 
 This package provides Zone's CSS style guide as an extensible shared config.
 
-## Requirements
-
-As this package is a config, you'll need to ensure you've installed any peer dependencies.
-
-### Yarn
-
-`yarn add stylelint`
-
-### NPM
-
-`npm i stylelint`
-
 ## Installation
 
 ### Yarn
