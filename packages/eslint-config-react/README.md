@@ -10,18 +10,6 @@
 
 This package provides Zone's JavaScript style guide for React as an extensible shared config. It extends [Zones base config](https://github.com/zone/frontend/tree/master/packages/eslint-config-zone).
 
-## Requirements
-
-As this package is a config, you'll need to ensure you've installed any peer dependencies.
-
-### Yarn
-
-`yarn add eslint eslint-plugin-compat eslint-plugin-import eslint-plugin-react`
-
-### NPM
-
-`npm i eslint eslint-plugin-compat eslint-plugin-import eslint-plugin-react`
-
 ## Installation
 
 ### Yarn

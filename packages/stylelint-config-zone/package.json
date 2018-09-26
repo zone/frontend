@@ -4,7 +4,7 @@
   "description": "This package provides Zone's CSS style guide as an extensible shared config.",
   "main": "index.js",
   "repository": "git@github.com:zone/frontend.git",
-  "author": "Mike Simmonds <mike@simmo.me> (https://simmo.me)",
+  "author": "Mike Simmonds (https://simmo.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zone/frontend/issues"
@@ -19,12 +19,7 @@
     "access": "public"
   },
   "dependencies": {
+    "stylelint": "^9.5.0",
     "stylelint-config-standard": "^18.2.0"
-  },
-  "devDependencies": {
-    "stylelint": "^9.0.0"
-  },
-  "peerDependencies": {
-    "stylelint": "^9.0.0"
   }
 }

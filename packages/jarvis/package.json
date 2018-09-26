@@ -4,7 +4,7 @@
   "description": "This package provides a way to install Zone tools and configs.",
   "main": "index.js",
   "repository": "git@github.com:zone/frontend.git",
-  "author": "Mike Simmonds <mike@simmo.me> (https://simmo.me)",
+  "author": "Mike Simmonds (https://simmo.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zone/frontend/issues"
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "inquirer": "^5.2.0",
-    "ora": "^2.1.0"
+    "inquirer": "^6.2.0",
+    "ora": "^3.0.0"
   }
 }
