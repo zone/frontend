@@ -4,7 +4,7 @@
   "description": "This package provides Zone's browser matrix as a shared config.",
   "main": "index.js",
   "repository": "git@github.com:zone/frontend.git",
-  "author": "Mike Simmonds <mike@simmo.me> (https://simmo.me)",
+  "author": "Mike Simmonds (https://simmo.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zone/frontend/issues"
@@ -19,6 +19,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "browserslist": "^3.2.6"
+    "browserslist": "^4.1.0"
   }
 }

@@ -2,13 +2,13 @@
 
 exports[`@zonedigital/browserslist-config should not contain invalid queries 1`] = `
 Array [
-  "and_chr 64",
-  "chrome 65",
-  "edge 16",
-  "firefox 59",
+  "and_chr 67",
+  "chrome 68",
+  "edge 17",
+  "firefox 61",
   "ie 11",
   "ie_mob 11",
-  "ios_saf 11.3",
+  "ios_saf 11.3-11.4",
   "ios_saf 11.0-11.2",
   "ios_saf 10.3",
   "ios_saf 10.0-10.2",
