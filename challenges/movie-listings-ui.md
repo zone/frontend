@@ -9,6 +9,7 @@
 * 😍 Be sure to write comments and a README. Provide instructions on how to run the project and any notes about your solution.
 * 🤩 Feel free to use a JavaScript framework. We use React, Vue and plain JavaScript here but use what you’re most comfortable with.
 * 🤨 You can also use a starter kit like [create React app][create-react-app] or [Vue CLI][vue-cli] to save time.
+* 🤗 We love clean, responsive interfaces. Pick your favourite [Google font][google-fonts] and layout the movies in a grid, adjusting the number of columns as the device width allows.
 * 🤗 We use SCSS here, but use whatever you are most comfortable.
 * 🧐 We’re most interested in how you return and layout the results. Also, please don't use a CSS framework.
 * 😇 Keep it simple, keep it DRY, but don’t over complicate or over engineer, comment and test as much as possible.
