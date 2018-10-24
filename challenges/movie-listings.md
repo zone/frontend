@@ -9,7 +9,7 @@
 * 😍 Be sure to write comments and a README. Provide instructions on how to run the project and any notes about your solution.
 * 🤩 Feel free to use a framework. We use React, Vue and plain JavaScript here but use what you’re most comfortable with.
 * 🤨 You can also use a starter kit like [create React app][create-react-app] or [Vue CLI][vue-cli] to save time.
-* 🤗 UI is great but a clean layout and typography will do.
+* 🤗 We love clean, responsive interfaces. Pick your favourite [Google font][google-fonts] and layout the movies in a grid, adjusting the number of columns as the device width allows.
 * 🧐 We’re most interested to see problem solving and your approach… also ES6 please.
 * 😇 Keep it simple, keep it DRY, but don’t over complicate or over engineer, comment and test as much as possible.
 * 🤓 Commit your code to a public Git repository and provide us with the URL.
@@ -44,3 +44,4 @@ Using the TMDb API display a list of now showing movies allowing the user to fil
 [tmdb-genres]: https://developers.themoviedb.org/3/genres/get-movie-list
 [tmdb-signup]: https://www.themoviedb.org/account/signup
 [tmdb-images]: https://developers.themoviedb.org/3/getting-started/images
+[google-fonts]: https://fonts.google.com/
