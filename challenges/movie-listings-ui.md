@@ -41,3 +41,4 @@ Using the TMDb API display a list of now showing movies allowing the user to fil
 [tmdb-now-playing]: https://developers.themoviedb.org/3/movies/get-now-playing
 [tmdb-signup]: https://www.themoviedb.org/account/signup
 [tmdb-images]: https://developers.themoviedb.org/3/getting-started/images
+[google-fonts]: https://fonts.google.com/
