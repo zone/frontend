@@ -1,6 +1,6 @@
 ---
 name: Chore
-about: A task to maintenance and keep the project in order.
+about: A maintenance task to keep the project in order.
 
 ---
 
