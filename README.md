@@ -2,6 +2,8 @@
 
 # Zone: Frontend
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zone/frontend.svg)](https://greenkeeper.io/)
+
 [![Part of Zone Frontend][zone-fe-image]][zone-fe-url] [![Travis][img-travis]][url-travis] [![lerna][img-lerna]][url-lerna] [![License][img-license]][url-license]
 
 Mono repo for Zone's frontend setup and tooling.
