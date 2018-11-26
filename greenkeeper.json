@@ -1,0 +1,15 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/browserslist-config/package.json",
+        "packages/eslint-config-react/package.json",
+        "packages/eslint-config-vue/package.json",
+        "packages/eslint-config-zone/package.json",
+        "packages/jarvis/package.json",
+        "packages/stylelint-config-zone/package.json"
+      ]
+    }
+  }
+}

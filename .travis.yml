@@ -8,3 +8,4 @@ branches:
     - master
     - develop
     - /^release/
+    - /^greenkeeper/.*$/
