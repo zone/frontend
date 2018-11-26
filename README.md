@@ -2,9 +2,7 @@
 
 # Zone: Frontend
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/zone/frontend.svg)](https://greenkeeper.io/)
-
-[![Part of Zone Frontend][zone-fe-image]][zone-fe-url] [![Travis][img-travis]][url-travis] [![lerna][img-lerna]][url-lerna] [![License][img-license]][url-license]
+[![Part of Zone Frontend][zone-fe-image]][zone-fe-url] [![Travis][img-travis]][url-travis] [![lerna][img-lerna]][url-lerna] [![License][img-license]][url-license] [![Greenkeeper][img-greenkeeper]][url-greenkeeper]
 
 Mono repo for Zone's frontend setup and tooling.
 
@@ -18,7 +16,7 @@ See `./packages/*` for individual package installation details.
 | [eslint-config-react]   | Base+React JavaScript style guide |
 | [eslint-config-vue]     | Base+Vue JavaScript style guide   |
 | [eslint-config-zone]    | Base JavaScript style guide       |
-| [jarvis]                | Config CLI tool                   |
+| [jarvis]                | Config CLI tool                   |
 | [stylelint-config-zone] | Base CSS style guide              |
 
 ## Install (BETA)
@@ -41,9 +39,11 @@ Be sure to check that all the [Travis CI][url-travis] build jobs have passed.
 [eslint-config-zone]: https://github.com/zone/frontend/tree/master/packages/eslint-config-zone
 [jarvis]: https://github.com/zone/frontend/tree/master/packages/jarvis
 [stylelint-config-zone]: https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone
+[img-greenkeeper]: https://badges.greenkeeper.io/zone/frontend.svg?style=flat-square
 [img-lerna]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square
 [img-license]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [img-travis]: https://img.shields.io/travis/zone/frontend.svg?style=flat-square
+[url-greenkeeper]: https://greenkeeper.io/
 [url-lerna]: https://lernajs.io/
 [url-license]: https://github.com/zonedigital/frontend/blob/master/LICENSE
 [url-travis]: https://travis-ci.org/zone/frontend
