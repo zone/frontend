@@ -754,6 +754,7 @@ Object {
     "process": false,
     "prompt": false,
     "propertyIsEnumerable": false,
+    "queueMicrotask": false,
     "registerProcessor": false,
     "removeEventListener": false,
     "requestAnimationFrame": false,
