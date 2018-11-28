@@ -6,14 +6,13 @@
 
 ## Introduction
 
-* 😍 Be sure to write comments and a README. Provide instructions on how to run the project and any notes about your solution.
-* 🤩 Feel free to use a JavaScript framework. We use React, Vue and plain JavaScript here but use what you’re most comfortable with.
-* 🤨 You can also use a starter kit like [create React app][create-react-app] or [Vue CLI][vue-cli] to save time.
-* 🤗 We love clean, responsive interfaces. Pick your favourite [Google font][google-fonts] and layout the movies in a grid, adjusting the number of columns as the device width allows.
-* 🤗 We use SCSS here, but use whatever you are most comfortable.
-* 🧐 We’re most interested in how you return and layout the results. Also, please don't use a CSS framework.
-* 😇 Keep it simple, keep it DRY, but don’t over complicate or over engineer, comment and test as much as possible.
-* 🤓 Commit your code to a public Git repository and provide us with the URL.
+- 😍 Be sure to write comments and a README. Provide instructions on how to run the project and any notes about your solution.
+- 🤩 Feel free to use a JavaScript framework. We use React, Vue and plain JavaScript here but use what you’re most comfortable with.
+- 🤨 You can also use a starter kit like [Create React App][create-react-app] or [Vue CLI][vue-cli] to save time.
+- 🤗 We love clean, responsive interfaces. Pick your favourite [Google font][google-fonts] and layout the movies in a grid, adjusting the number of columns as the device width allows.
+- 🧐 We’re most interested in how you return and layout the results. Also, please don't use a CSS framework.
+- 😇 Keep it simple, keep it DRY, but don’t over complicate or over engineer, comment and test as much as possible.
+- 🤓 Commit your code to a public Git repository and provide us with the URL.
 
 ## Brief
 
@@ -23,16 +22,16 @@ Using the TMDb API display a list of now showing movies allowing the user to fil
 
 ## Input
 
-* [TMDb Movies Now Playing API][tmdb-now-playing]
-* [TMDb Image API][tmdb-images]
-* Minimum rating input with a range between 0 and 10, increments of 0.5 and a default set to 3.
+- [TMDb Movies Now Playing API][tmdb-now-playing]
+- [TMDb Image API][tmdb-images]
+- Minimum rating input with a range between 0 and 10, increments of 0.5 and a default set to 3.
 
 ## Output
 
-* Display a list of movies, each showing their title, genres and poster image.
-* The movies should be ordered by popularity (most popular first - `popularity` property).
-* Movies should also be filterable by their rating (`vote_average` property). i.e If rating was set to 5, you would expect to see all movies with a rating of 5 or higher.
-* The input API's should only be called once.
+- Display a list of movies, each showing their title, genres and poster image.
+- The movies should be ordered by popularity (most popular first - `popularity` property).
+- Movies should also be filterable by their rating (`vote_average` property). i.e If rating was set to 5, you would expect to see all movies with a rating of 5 or higher.
+- The input API's should only be called once.
 
 [zone-fe-image]: https://img.shields.io/badge/-frontend-lightgrey.svg?logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTMgMTQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjYuMjc3NjY4NzEgMTAuNzU0MjMzMSAxMi45OTU5NTA5IDAgMi43MzMwMDYxMyAwIDAuNzMwMDYxMzUgMy4xOTc2Njg3MSA2LjcxOTE0MTEgMy4xOTc2Njg3MSAwIDEzLjk1MTA0MjkgMTAuMjU5NTA5MiAxMy45NTEwNDI5IDEyLjI2MzMxMjkgMTAuNzUxNjU2NCI+PC9wb2x5Z29uPjwvc3ZnPg==&longCache=true&style=flat-square&colorA=2C2B39&colorB=1010E5
 [zone-fe-url]: https://github.com/zone/frontend
