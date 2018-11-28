@@ -1885,7 +1885,28 @@ Object {
         "switches": "never",
       },
     ],
-    "padding-line-between-statements": "off",
+    "padding-line-between-statements": Array [
+      "error",
+      Object {
+        "blankLine": "always",
+        "next": "*",
+        "prev": Array [
+          "const",
+          "let",
+        ],
+      },
+      Object {
+        "blankLine": "any",
+        "next": Array [
+          "const",
+          "let",
+        ],
+        "prev": Array [
+          "const",
+          "let",
+        ],
+      },
+    ],
     "prefer-arrow-callback": Array [
       "error",
       Object {
