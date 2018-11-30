@@ -8,7 +8,12 @@
     "compat/compat": "warn",
     "complexity": ["error", 10],
     "curly": ["error", "all"],
-    "operator-linebreak": ["error", "after"]
+    "operator-linebreak": ["error", "after"],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": ["const", "let"], "next": "*" },
+      { "blankLine": "any", "prev": ["const", "let"], "next": ["const", "let"] }
+    ]
   },
   "plugins": ["compat"]
 }
