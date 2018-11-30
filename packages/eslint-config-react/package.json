@@ -6,9 +6,7 @@
   "repository": "git@github.com:zone/frontend.git",
   "author": "Mike Simmonds (https://simmo.me)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zone/frontend/issues"
-  },
+  "bugs": "https://github.com/zone/frontend/issues",
   "homepage": "https://github.com/zone/frontend/tree/master/packages/eslint-config-react#readme",
   "keywords": [
     "eslint",
@@ -22,5 +20,8 @@
   "dependencies": {
     "@zonedigital/eslint-config-zone": "^3.0.0",
     "eslint-plugin-react": "^7.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0"
   }
 }

@@ -6,9 +6,7 @@
   "repository": "git@github.com:zone/frontend.git",
   "author": "Mike Simmonds (https://simmo.me)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zone/frontend/issues"
-  },
+  "bugs": "https://github.com/zone/frontend/issues",
   "homepage": "https://github.com/zone/frontend/tree/master/packages/browserslist-config#readme",
   "keywords": [
     "browserslist",

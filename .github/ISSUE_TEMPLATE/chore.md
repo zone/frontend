@@ -1,7 +1,6 @@
 ---
 name: Chore
 about: A maintenance task to keep the project in order.
-
 ---
 
 **Package (if applicable)**
