@@ -1,6 +1,6 @@
 {
   "name": "@zonedigital/eslint-config-zone",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "This package provides Zone's JavaScript style guide as an extensible shared config.",
   "main": "index.js",
   "repository": "git@github.com:zone/frontend.git",
