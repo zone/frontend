@@ -1,6 +1,9 @@
 {
   "extends": ["plugin:vue/recommended", "@zonedigital/eslint-config-zone"],
   "rules": {
+    "vue/attribute-hyphenation": "error",
+    "vue/html-closing-bracket-spacing": "error",
+    "vue/html-indent": "error",
     "vue/max-attributes-per-line": [
       "error",
       {
@@ -10,6 +13,15 @@
           "allowFirstLine": true
         }
       }
-    ]
+    ],
+    "vue/multiline-html-element-content-newline": "error",
+    "vue/mustache-interpolation-spacing": "error",
+    "vue/no-multi-spaces": "error",
+    "vue/no-spaces-around-equal-signs-in-attribute": "error",
+    "vue/no-template-shadow": "error",
+    "vue/order-in-components": "error",
+    "vue/this-in-template": "error",
+    "vue/v-bind-style": "error",
+    "vue/v-on-style": "error"
   }
 }
