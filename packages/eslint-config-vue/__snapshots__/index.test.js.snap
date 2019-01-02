@@ -2097,7 +2097,6 @@ Object {
     "vue/attribute-hyphenation": "error",
     "vue/attributes-order": "warn",
     "vue/comment-directive": "error",
-    "vue/component-name-in-template-casing": "warn",
     "vue/html-closing-bracket-newline": "warn",
     "vue/html-closing-bracket-spacing": "error",
     "vue/html-end-tags": "warn",
