@@ -16,6 +16,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "engines": {
+    "node": "^8 || ^10 || ^11"
+  },
   "devDependencies": {
     "browserslist": "^4.3.7"
   }
