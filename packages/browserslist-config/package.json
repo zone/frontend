@@ -1,6 +1,6 @@
 {
   "name": "@zonedigital/browserslist-config",
-  "version": "3.0.1",
+  "version": "4.0.0-alpha.0",
   "description": "This package provides Zone's browser matrix as a shared config.",
   "main": "index.js",
   "repository": "github:zone/frontend",
