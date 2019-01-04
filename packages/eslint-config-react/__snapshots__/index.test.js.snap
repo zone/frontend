@@ -808,6 +808,7 @@ Object {
     "react",
     "import",
     "compat",
+    "react-hooks",
   ],
   "rules": Object {
     "accessor-pairs": "off",
@@ -1971,6 +1972,7 @@ Object {
       },
     ],
     "radix": "error",
+    "react-hooks/rules-of-hooks": "error",
     "react/display-name": 2,
     "react/jsx-key": 2,
     "react/jsx-no-comment-textnodes": 2,
