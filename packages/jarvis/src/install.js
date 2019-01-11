@@ -1,114 +1,52 @@
-const ora = require('ora')
-const path = require('path')
-const fs = require('fs')
-const findPeerDependencies = require('./findPeerDependencies')
-const readFile = require('./readFile')
-const task = require('./task')
-const { exec } = require('child_process')
+const chalk = require('chalk')
 
-module.exports = class Install {
-  constructor() {
-    this.moduleQueue = []
-    this.configQueue = []
-    this.spinner = ora('Building package.json')
-  }
+const { log } = require('./util/console')
+const prompt = require('./util/prompt')
+const resolveSerial = require('./util/resolveSerial')
 
-  addPackage({ name, version = 'latest', config: { key, transform } }) {
-    this.configQueue.push({ key, transform: config => transform(config, name, version) })
-    this.moduleQueue.push(() =>
-      new Promise(async (resolve, reject) => {
-        const packageAtVerison = `${name}@${version}`
-        const [error, peerDependencies] = await task(findPeerDependencies(packageAtVerison))
+const filesTask = require('./tasks/files')
+const dependenciesTask = require('./tasks/dependencies')
+const configChangesTask = require('./tasks/configChanges')
 
-        if (error) {
-          return reject(error)
-        }
+// Export the addItem functions from the tasks
+exports.addConfigChange = configChangesTask.addItem
+exports.addDependency = dependenciesTask.addItem
+exports.addFile = filesTask.addItem
 
-        return resolve([...peerDependencies, packageAtVerison])
-      }))
-  }
+exports.install = async (...plugins) => {
+  const choices = plugins.map(({ id, name }) => ({ name, value: id }))
 
-  async installPackages() {
-    this.spinner.text = 'Fetching package dependencies'
-    const [error, modules] = await task(Promise.all(this.moduleQueue.map(promise => promise())))
+  log(`\n${chalk.white.bgBlue.bold(' Zone ')}${chalk.white.bgBlack.bold(' Frontend ')}\n`)
 
-    return new Promise((resolve, reject) => {
-      if (error) {
-        return reject(error)
-      }
+  // Ask the user what plugins they need
+  const { selectedPlugins } = await prompt({
+    name: 'selectedPlugins',
+    type: 'checkbox',
+    message: 'What Zone packages do you need?',
+    choices,
+    default: choices.map(({ value }) => value),
+  })
 
-      const dependencies = modules.reduce(
-        (allDependencies, moduleDependencies) => [...allDependencies, ...moduleDependencies],
-        [],
-      )
+  // Get the init functions from the plugins the user selected
+  const pluginsToInitalise = plugins
+    .filter(({ id }) => selectedPlugins.includes(id))
+    .map(({ init }) => init)
 
-      if (dependencies.length) {
-        this.spinner.text = 'Installing dependencies'
-        return resolve(new Promise((addResolve, addReject) => {
-          exec(`yarn add ${dependencies.join(' ')}`, (installError) => {
-            if (installError) {
-              return addReject(new Error('Unable to install dependencies'))
-            }
+  try {
+    // init function return a promise
+    // as each plugin may need the get user input
+    // we need to execute these in serial
+    const pluginQueue = await resolveSerial(pluginsToInitalise)
 
-            return addResolve()
-          })
-        }))
-      }
+    // Plugins return a new function after initialisation, execute these in parallel
+    await Promise.all(pluginQueue.map(plugin => plugin()))
 
-      return resolve()
-    })
-  }
+    // Run each of the tasks in serial to avoid clashes
+    await resolveSerial([dependenciesTask.run, filesTask.run, configChangesTask.run])
 
-  async buildPackageJson() {
-    this.spinner.text = 'Attempting to read existing package.json'
-    const packageJsonPath = path.join(process.cwd(), 'package.json')
-    const [readError, initialPackageJsonRaw] = await task(readFile(packageJsonPath))
-
-    // eslint-disable-next-line consistent-return
-    return new Promise((resolve, reject) => {
-      try {
-        // If we had a read error, just create a basic package.json file
-        // or else try and parse the found package.json file
-        const initialPackageJson = readError ? { private: true } : JSON.parse(initialPackageJsonRaw)
-
-        // Run the package.json through the config transform
-        this.spinner.text = 'Applying package config transforms'
-        const packageJson = this.configQueue.reduce(
-          (obj, { key, transform }) => ({
-            ...obj,
-            [key]: transform(obj[key]),
-          }),
-          initialPackageJson,
-        )
-
-        fs.writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2), (writeError) => {
-          if (writeError) {
-            return reject(new Error('Could not write package.json'))
-          }
-
-          return resolve()
-        })
-      } catch (parseError) {
-        return reject(new Error('Could not parse package.json'))
-      }
-    })
-  }
-
-  execute() {
-    this.spinner.start()
-
-    this.buildPackageJson()
-      .then(() => {
-        this.installPackages()
-          .then(() => {
-            this.spinner.succeed('Done!')
-          })
-          .catch(() => {
-            this.spinner.fail('Failed installing packages')
-          })
-      })
-      .catch(() => {
-        this.spinner.fail('Failed buidling package.json')
-      })
+    log(`\n${process.platform === 'win32' ? '' : '✨ '}Done`)
+  } catch (error) {
+    log('Sorry something went wrong')
+    log(error)
   }
 }
