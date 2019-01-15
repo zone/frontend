@@ -1,4 +1,5 @@
-const invariant = require('../util/invariant')
+const invariant = require('invariant')
+
 const prompt = require('./prompt')
 
 module.exports = ({

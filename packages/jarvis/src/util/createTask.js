@@ -1,6 +1,6 @@
+const invariant = require('invariant')
 const ora = require('ora')
 
-const invariant = require('./invariant')
 const { logHeader } = require('./console')
 
 module.exports = ({ name, run }) => {
