@@ -1,4 +1,4 @@
-<a href="https://zonedigital.com"><img src="./assets/logo.svg" height="50" alt="Zone Logo" aria-label="zonedigital.com" /></a>
+<a href="https://zonedigital.com"><svg height="50" viewBox="0 0 91 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1010E5" d="M0 100l47.89-76.646H4.11l2.995-4.814h49.44L8.604 95.204H68.85l2.995-4.795H17.29l47.945-76.726H10.34L18.907 0l71.771.018L43.26 75.997l43.265-.019-3.025 4.833-48.895.018L82.122 4.777 21.449 4.76l-2.897 4.36h55.179l-47.792 76.5H80.51L71.53 100z"/></svg></a>
 
 # Zone: Frontend
 

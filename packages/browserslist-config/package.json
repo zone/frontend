@@ -1,10 +1,10 @@
 {
   "name": "@zonedigital/browserslist-config",
-  "version": "3.1.1",
+  "version": "4.0.0-alpha.0",
   "description": "This package provides Zone's browser matrix as a shared config.",
   "main": "index.js",
-  "repository": "git@github.com:zone/frontend.git",
-  "author": "Mike Simmonds (https://simmo.me)",
+  "repository": "github:zone/frontend",
+  "author": "Mike Simmonds (https://simmo.codes)",
   "license": "MIT",
   "bugs": "https://github.com/zone/frontend/issues",
   "homepage": "https://github.com/zone/frontend/tree/master/packages/browserslist-config#readme",
@@ -16,7 +16,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "engines": {
+    "node": "^8 || ^10 || ^11"
+  },
   "devDependencies": {
-    "browserslist": "^4.1.0"
+    "browserslist": "^4.3.7"
   }
 }
