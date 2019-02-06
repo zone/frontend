@@ -35,6 +35,6 @@
     "eslint-plugin-compat": "^2.0.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-react": "^7.0.0",
-    "eslint-plugin-react-hooks": "^0.0.0"
+    "eslint-plugin-react-hooks": "^1.0.0"
   }
 }
