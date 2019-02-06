@@ -18,5 +18,20 @@
     "snapshotSerializers": [
       "jest-serializer-path"
     ]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "extends": "./packages/eslint-config-zone/index.js",
+    "env": {
+      "jest": true
+    },
+    "rules": {
+      "semi": ["error", "never"]
+    }
   }
 }
