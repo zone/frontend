@@ -1,4 +1,4 @@
-<a href="https://zonedigital.com"><svg height="50" viewBox="0 0 91 100" xmlns="http://www.w3.org/2000/svg"><path fill="#1010E5" d="M0 100l47.89-76.646H4.11l2.995-4.814h49.44L8.604 95.204H68.85l2.995-4.795H17.29l47.945-76.726H10.34L18.907 0l71.771.018L43.26 75.997l43.265-.019-3.025 4.833-48.895.018L82.122 4.777 21.449 4.76l-2.897 4.36h55.179l-47.792 76.5H80.51L71.53 100z"/></svg></a>
+[![Zone][img-zone]][url-zone]
 
 # Zone: Frontend
 
@@ -43,10 +43,12 @@ Be sure to check that all the [Travis CI][url-travis] build jobs have passed.
 [img-lerna]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square
 [img-license]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [img-travis]: https://img.shields.io/travis/zone/frontend.svg?style=flat-square
+[img-zone]: .github/logo.svg
 [url-greenkeeper]: https://greenkeeper.io/
 [url-lerna]: https://lernajs.io/
 [url-license]: https://github.com/zonedigital/frontend/blob/master/LICENSE
 [url-travis]: https://travis-ci.org/zone/frontend
 [url-yarn-workspaces]: https://yarnpkg.com/lang/en/docs/workspaces/
+[url-zone]: https://zonedigital.com
 [zone-fe-image]: https://img.shields.io/badge/-frontend-lightgrey.svg?logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTMgMTQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjYuMjc3NjY4NzEgMTAuNzU0MjMzMSAxMi45OTU5NTA5IDAgMi43MzMwMDYxMyAwIDAuNzMwMDYxMzUgMy4xOTc2Njg3MSA2LjcxOTE0MTEgMy4xOTc2Njg3MSAwIDEzLjk1MTA0MjkgMTAuMjU5NTA5MiAxMy45NTEwNDI5IDEyLjI2MzMxMjkgMTAuNzUxNjU2NCI+PC9wb2x5Z29uPjwvc3ZnPg==&longCache=true&style=flat-square&colorA=2C2B39&colorB=1010E5
 [zone-fe-url]: https://github.com/zone/frontend
