@@ -14,7 +14,7 @@ let logLevel = levels.info
 const formatter = ({ level, message }) => {
   switch (level) {
     case 'debug':
-      return dim(`${dim().bold('DEBUG')} ${dim(message)}`)
+      return dim(`${bold('DEBUG')} ${message}`)
     case 'error':
       return red(`${bold('ERROR')} ${message}`)
     case 'info':
