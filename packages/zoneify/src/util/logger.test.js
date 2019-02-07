@@ -39,15 +39,21 @@ describe('logger', () => {
     expect(log.level).toBe(originalLevel)
   })
 
-  it('should format debug logs differently to info logs', () => {
+  it('should format debug logs', () => {
+    expect(debugOutput).toMatchSnapshot()
+  })
+
+  it('should format info logs', () => {
+    expect(infoOutput).toMatchSnapshot()
+  })
+
+  it('should format error logs', () => {
+    expect(errorOutput).toMatchSnapshot()
+  })
+
+  it('should format error/info/debug logs differently', () => {
     expect(debugOutput).not.toEqual(infoOutput)
-  })
-
-  it('should format error logs differently to info logs', () => {
-    expect(errorOutput).not.toEqual(infoOutput)
-  })
-
-  it('should format error logs differently to debug logs', () => {
+    expect(debugOutput).not.toEqual(errorOutput)
     expect(errorOutput).not.toEqual(infoOutput)
   })
 

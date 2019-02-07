@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`logger should format debug logs 1`] = `"[2m[1m[2mDEBUG[1m[2m [2mtest[2m[22m"`;
+
+exports[`logger should format error logs 1`] = `"[31m[1mERROR[22m test[39m"`;
+
+exports[`logger should format info logs 1`] = `"test"`;
+
 exports[`logger should have log levels 1`] = `
 Object {
   "debug": 2,

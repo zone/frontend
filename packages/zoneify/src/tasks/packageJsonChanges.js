@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const { bold } = require('kleur')
 const path = require('path')
 const { log } = require('../util/logger')
 const createQueue = require('../util/createQueue')
@@ -25,13 +25,13 @@ exports.run = async () => {
   const initialPackageJson = await readFile(destination)
     .catch((error) => {
       log.error(error)
-      throw new Error(`Could not read ${chalk.bold(fileName)}.\nCheck it exists and is readable.`)
+      throw new Error(`Could not read ${bold(fileName)}.\nCheck it exists and is readable.`)
     })
     .then(content => JSON.parse(content))
     .catch((error) => {
       log.error(error)
       throw new Error(
-        `Could not parse ${chalk.bold(fileName)}.\nCheck it has been initalised via 'npm init'.`,
+        `Could not parse ${bold(fileName)}.\nCheck it has been initalised via 'npm init'.`,
       )
     })
   const workInProgress = queue.items.reduce(

@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const { bold } = require('kleur')
 const path = require('path')
 const { log } = require('../util/logger')
 const createQueue = require('../util/createQueue')
@@ -27,9 +27,7 @@ exports.run = async () => {
 
     return writeFile(destination, content).catch(() => {
       throw new Error(
-        `Could not write ${chalk.bold(fileName)}.\nCheck ${chalk.bold(
-          destinationPath,
-        )} exists and is writable.`,
+        `Could not write ${bold(fileName)}.\nCheck ${bold(destinationPath)} exists and is writable.`,
       )
     })
   })

@@ -1,4 +1,4 @@
-const chalk = require('chalk')
+const { bold, dim, red } = require('kleur')
 const ora = require('ora')
 
 const spinner = ora()
@@ -14,9 +14,9 @@ let logLevel = levels.info
 const formatter = ({ level, message }) => {
   switch (level) {
     case 'debug':
-      return `${chalk.dim.bold('DEBUG')} ${chalk.dim(message)}`
+      return dim(`${dim().bold('DEBUG')} ${dim(message)}`)
     case 'error':
-      return `${chalk.red.bold('ERROR')} ${chalk.red(message)}`
+      return red(`${bold('ERROR')} ${message}`)
     case 'info':
     default:
       return message
