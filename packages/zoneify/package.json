@@ -1,0 +1,44 @@
+{
+  "name": "zoneify",
+  "version": "4.0.0",
+  "description": "This package provides a way to install Zone tools and configs.",
+  "main": "./src/index.js",
+  "repository": "github:zone/frontend",
+  "author": "Mike Simmonds (https://simmo.codes)",
+  "license": "MIT",
+  "bugs": "https://github.com/zone/frontend/issues",
+  "homepage": "https://github.com/zone/frontend/tree/master/packages/zoneify#readme",
+  "keywords": [
+    "npx",
+    "generator",
+    "boilerplate",
+    "zone"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^8 || ^10 || ^11"
+  },
+  "bin": "./src/index.js",
+  "eslintConfig": {
+    "env": {
+      "browser": false,
+      "node": true
+    },
+    "rules": {
+      "compat/compat": "off"
+    }
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "glob": "^7.1.3",
+    "inquirer": "^6.2.0",
+    "invariant": "^2.2.4",
+    "ora": "^3.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`features/stylelint run should add a config change 1`] = `
+[MockFunction addPackageJsonChange] {
+  "calls": Array [
+    Array [
+      [Function],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`features/stylelint run should add a config change 2`] = `
+Object {
+  "name": "test package",
+  "stylelint": Object {
+    "extends": "@zonedigital/stylelint-config-zone",
+  },
+}
+`;
+
+exports[`features/stylelint should have a name 1`] = `"stylelint"`;
+
+exports[`features/stylelint should have no questions 1`] = `undefined`;

@@ -16,14 +16,14 @@ See `./packages/*` for individual package installation details.
 | [eslint-config-react]   | Base+React JavaScript style guide |
 | [eslint-config-vue]     | Base+Vue JavaScript style guide   |
 | [eslint-config-zone]    | Base JavaScript style guide       |
-| [jarvis]                | Config CLI tool                   |
 | [stylelint-config-zone] | Base CSS style guide              |
+| [zoneify]               | Config CLI tool                   |
 
-## Install (BETA)
+## Install
 
-If you're looking for a easier way to get these configs in your project, be sure to check out [Jarvis](jarvis).
+If you're looking for a easier way to get these configs in your project, be sure to check out [Zoneify](zoneify).
 
-Using NPM's NPX tool, you can use it without install, just run: `npx @zonedigital/jarvis`
+Using NPM's NPX tool, you can use it without install, just run `npx zoneify`.
 
 ## Maintenance
 
@@ -37,7 +37,7 @@ Be sure to check that all the [Travis CI][url-travis] build jobs have passed.
 [eslint-config-react]: https://github.com/zone/frontend/tree/master/packages/eslint-config-react
 [eslint-config-vue]: https://github.com/zone/frontend/tree/master/packages/eslint-config-vue
 [eslint-config-zone]: https://github.com/zone/frontend/tree/master/packages/eslint-config-zone
-[jarvis]: https://github.com/zone/frontend/tree/master/packages/jarvis
+[zoneify]: https://github.com/zone/frontend/tree/master/packages/zoneify
 [stylelint-config-zone]: https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone
 [img-greenkeeper]: https://badges.greenkeeper.io/zone/frontend.svg?style=flat-square
 [img-lerna]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square
