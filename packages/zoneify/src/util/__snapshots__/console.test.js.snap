@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`console should log a divide 1`] = `"[2m----[22m"`;
-
-exports[`console should log a header 1`] = `
-"[1mHeader[22m
-[2m------[22m"
-`;
