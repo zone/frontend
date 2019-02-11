@@ -7,6 +7,9 @@ global.console = {
   log: jest.fn(),
 }
 
+const start = jest.spyOn(spinner, 'start')
+const stop = jest.spyOn(spinner, 'stop')
+
 describe('logger', () => {
   const message = 'test'
   const debugOutput = formatter({ level: 'debug', message })
@@ -56,21 +59,24 @@ describe('logger', () => {
     expect(debugOutput).not.toEqual(errorOutput)
     expect(errorOutput).not.toEqual(infoOutput)
   })
+  const spinnerMessage = 'Test'
 
   it('should start/stop the spinner', () => {
-    const spinnerMessage = 'Test'
-
     spinner.start(spinnerMessage)
-    expect(spinner.isSpinning).toBeTruthy()
+    spinner.isSpinning = true
     log.info('Test')
-    expect(spinner.isSpinning).toBeTruthy()
+    expect(stop).toBeCalled()
+    expect(start).toBeCalledWith(spinnerMessage)
+
+    start.mockReset()
     spinner.stop()
+    stop.mockReset()
   })
 
   it('should not start/stop the spinner', () => {
-    expect(spinner.isSpinning).toBeFalsy()
     log.info('Test')
-    expect(spinner.isSpinning).toBeFalsy()
+    expect(stop).not.toBeCalled()
+    expect(start).not.toBeCalledWith(spinnerMessage)
   })
 
   it('should not log debug messages when info', () => {
