@@ -14,11 +14,11 @@ exports[`tasks/files should enqueue a file 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": Promise {},
     },
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": Promise {},
     },
   ],

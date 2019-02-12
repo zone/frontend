@@ -9,7 +9,7 @@ exports[`features/browserslist run should add a config change 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
   ],
