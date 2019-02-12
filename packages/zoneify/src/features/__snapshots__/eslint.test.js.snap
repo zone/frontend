@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`features/eslint run no framework should add a config change 1`] = `
+[MockFunction addPackageJsonChange] {
+  "calls": Array [
+    Array [
+      [Function],
+    ],
+    Array [
+      [Function],
+    ],
+    Array [
+      [Function],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`features/eslint run no framework should add a config change 2`] = `
+Object {
+  "eslintConfig": Object {
+    "extends": "@zonedigital/eslint-config-zone",
+  },
+  "name": "test package",
+}
+`;
+
+exports[`features/eslint run react should add a config change 1`] = `
+[MockFunction addPackageJsonChange] {
+  "calls": Array [
+    Array [
+      [Function],
+    ],
+    Array [
+      [Function],
+    ],
+    Array [
+      [Function],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`features/eslint run react should add a config change 2`] = `
+Object {
+  "eslintConfig": Object {
+    "extends": "@zonedigital/eslint-config-zone",
+  },
+  "name": "test package",
+}
+`;
+
+exports[`features/eslint run vue should add a config change 1`] = `
+[MockFunction addPackageJsonChange] {
+  "calls": Array [
+    Array [
+      [Function],
+    ],
+    Array [
+      [Function],
+    ],
+    Array [
+      [Function],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+    Object {
+      "isThrow": false,
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`features/eslint run vue should add a config change 2`] = `
+Object {
+  "eslintConfig": Object {
+    "extends": "@zonedigital/eslint-config-zone",
+  },
+  "name": "test package",
+}
+`;
+
+exports[`features/eslint should have a name 1`] = `"ESLint"`;
+
+exports[`features/eslint should have questions 1`] = `
+Array [
+  Object {
+    "choices": Array [
+      Object {
+        "name": "None",
+        "value": "zone",
+      },
+      Object {
+        "name": "React",
+        "value": "react",
+      },
+      Object {
+        "name": "Vue",
+        "value": "vue",
+      },
+    ],
+    "message": "What type of JS framework are you using?",
+    "name": "framework",
+    "type": "list",
+  },
+]
+`;

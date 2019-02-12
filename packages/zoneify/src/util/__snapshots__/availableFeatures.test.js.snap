@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`availableFeatures should return all available features 1`] = `
+Array [
+  Object {
+    "id": "browserslist",
+    "name": "Browserslist",
+    "questions": undefined,
+    "run": [Function],
+  },
+  Object {
+    "id": "editorConfig",
+    "name": "EditorConfig",
+    "questions": undefined,
+    "run": [Function],
+  },
+  Object {
+    "id": "eslint",
+    "name": "ESLint",
+    "questions": Array [
+      Object {
+        "choices": Array [
+          Object {
+            "name": "None",
+            "value": "zone",
+          },
+          Object {
+            "name": "React",
+            "value": "react",
+          },
+          Object {
+            "name": "Vue",
+            "value": "vue",
+          },
+        ],
+        "message": "What type of JS framework are you using?",
+        "name": "framework",
+        "type": "list",
+      },
+    ],
+    "run": [Function],
+  },
+  Object {
+    "id": "stylelint",
+    "name": "stylelint",
+    "questions": undefined,
+    "run": [Function],
+  },
+]
+`;
