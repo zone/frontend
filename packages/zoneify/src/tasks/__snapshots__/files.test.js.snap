@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tasks/files should enqueue a file 1`] = `
+[MockFunction writeFile] {
+  "calls": Array [
+    Array [
+      "<PROJECT_ROOT>/test1.md",
+      "test",
+    ],
+    Array [
+      "<PROJECT_ROOT>/test/test/test2.md",
+      "test",
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": Promise {},
+    },
+    Object {
+      "isThrow": false,
+      "value": Promise {},
+    },
+  ],
+}
+`;
+
+exports[`tasks/files should handle thrown errors 1`] = `
+[Error: Could not write [1mtest1.md[22m.
+Check [1m<PROJECT_ROOT>/[22m exists and is writable.]
+`;

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`features/editorConfig run should add a file 1`] = `
+[MockFunction addFile] {
+  "calls": Array [
+    Array [
+      Object {
+        "content": "# editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false",
+        "fileName": ".editorConfig",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`features/editorConfig should have a name 1`] = `"EditorConfig"`;
+
+exports[`features/editorConfig should have no questions 1`] = `undefined`;

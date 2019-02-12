@@ -1,6 +1,6 @@
 {
   "name": "@zonedigital/stylelint-config-zone",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "This package provides Zone's CSS style guide as an extensible shared config.",
   "main": "index.js",
   "repository": "github:zone/frontend",
