@@ -6,7 +6,7 @@
   ],
   "devDependencies": {
     "eslint": "^5.11.1",
-    "jest": "^23.6.0",
+    "jest": "^24.1.0",
     "jest-serializer-path": "^0.1.15",
     "lerna": "^3.10.5",
     "prettier": "^1.12.1"
