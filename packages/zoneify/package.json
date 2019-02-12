@@ -40,5 +40,8 @@
     "invariant": "^2.2.4",
     "kleur": "^3.0.1",
     "ora": "^3.0.0"
+  },
+  "devDependencies": {
+    "stream": "^0.0.2"
   }
 }

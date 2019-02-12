@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+const PassThroughStream = require('stream').PassThrough
 const {
   formatter, log, levels, spinner,
 } = require('./logger')
@@ -9,6 +10,20 @@ global.console = {
 
 const start = jest.spyOn(spinner, 'start')
 const stop = jest.spyOn(spinner, 'stop')
+const getPassThroughStream = () => {
+  const stream = new PassThroughStream()
+  const noop = () => {}
+
+  stream.writable = true
+  stream.write = noop
+  stream.clearLine = noop
+  stream.cursorTo = noop
+  stream.moveCursor = noop
+  return stream
+}
+
+spinner.stream = getPassThroughStream()
+spinner.isEnabled = true
 
 describe('logger', () => {
   const message = 'test'

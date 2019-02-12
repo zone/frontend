@@ -1,9 +1,7 @@
 const { bold, dim, red } = require('kleur')
 const ora = require('ora')
 
-const spinner = ora({
-  isEnabled: true,
-})
+const spinner = ora()
 
 const levels = {
   error: 0,
