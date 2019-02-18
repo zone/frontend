@@ -13,6 +13,9 @@
     "eslint-config",
     "eslintrc"
   ],
+  "files": [
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public"
   },
