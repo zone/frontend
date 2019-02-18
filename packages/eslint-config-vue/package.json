@@ -14,6 +14,9 @@
     "eslintrc",
     "vue"
   ],
+  "files": [
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public"
   },

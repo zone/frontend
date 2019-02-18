@@ -13,6 +13,9 @@
     "browserslist-config",
     "browserslistrc"
   ],
+  "files": [
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public"
   },

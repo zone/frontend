@@ -13,6 +13,9 @@
     "stylelint-config",
     "stylelintrc"
   ],
+  "files": [
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public"
   },
