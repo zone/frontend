@@ -31,7 +31,10 @@
       "jest": true
     },
     "rules": {
-      "semi": ["error", "never"]
+      "semi": [
+        "error",
+        "never"
+      ]
     }
   }
 }
