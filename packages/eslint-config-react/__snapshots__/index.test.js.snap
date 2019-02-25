@@ -1972,6 +1972,7 @@ Object {
       },
     ],
     "radix": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react/display-name": 2,
     "react/jsx-key": 2,
