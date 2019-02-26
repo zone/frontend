@@ -8,6 +8,18 @@ module.exports = {
     'compat/compat': 'warn',
     complexity: ['error', 10],
     curly: ['error', 'all'],
+    'max-len': [
+      'error',
+      {
+        code: 100,
+        ignoreComments: false,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreUrls: true,
+        tabWidth: 2,
+      },
+    ],
     'operator-linebreak': ['error', 'after'],
     'padding-line-between-statements': [
       'error',
