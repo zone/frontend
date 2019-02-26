@@ -628,7 +628,7 @@ Object {
     "isSecureContext": false,
     "length": false,
     "localStorage": false,
-    "location": false,
+    "location": true,
     "locationbar": false,
     "matchMedia": false,
     "menubar": false,
@@ -865,6 +865,7 @@ Object {
     "camelcase": Array [
       "error",
       Object {
+        "ignoreDestructuring": false,
         "properties": "never",
       },
     ],
@@ -956,6 +957,7 @@ Object {
       "error",
       Object {
         "allowKeywords": true,
+        "allowPattern": "",
       },
     ],
     "eol-last": Array [
@@ -1194,12 +1196,15 @@ Object {
         "overrides": Object {
           "case": Object {
             "after": true,
+            "before": true,
           },
           "return": Object {
             "after": true,
+            "before": true,
           },
           "throw": Object {
             "after": true,
+            "before": true,
           },
         },
       },
@@ -1241,14 +1246,14 @@ Object {
     ],
     "max-len": Array [
       "error",
-      100,
-      2,
       Object {
+        "code": 100,
         "ignoreComments": false,
         "ignoreRegExpLiterals": true,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true,
         "ignoreUrls": true,
+        "tabWidth": 2,
       },
     ],
     "max-lines": Array [
@@ -1302,6 +1307,7 @@ Object {
         ],
         "newIsCap": true,
         "newIsCapExceptions": Array [],
+        "properties": true,
       },
     ],
     "new-parens": "error",
@@ -1852,6 +1858,7 @@ Object {
       "error",
       Object {
         "allowAllPropertiesOnSameLine": true,
+        "allowMultiplePropertiesPerLine": false,
       },
     ],
     "object-shorthand": Array [

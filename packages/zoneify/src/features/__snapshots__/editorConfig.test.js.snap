@@ -24,7 +24,7 @@ trim_trailing_whitespace = false",
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],

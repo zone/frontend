@@ -1,6 +1,6 @@
 {
   "name": "@zonedigital/eslint-config-vue",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "This package provides Zone's JavaScript style guide for Vue as an extensible shared config.",
   "main": "index.js",
   "repository": "github:zone/frontend",
@@ -14,6 +14,9 @@
     "eslintrc",
     "vue"
   ],
+  "files": [
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -21,10 +24,10 @@
     "node": "^8 || ^10 || ^11"
   },
   "dependencies": {
-    "@zonedigital/eslint-config-zone": "^4.1.0"
+    "@zonedigital/eslint-config-zone": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.11.1",
+    "eslint": "^5.14.1",
     "eslint-plugin-compat": "^2.5.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-vue": "^5.1.0"

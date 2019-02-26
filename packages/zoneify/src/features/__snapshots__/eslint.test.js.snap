@@ -15,15 +15,15 @@ exports[`features/eslint run no framework should add a config change 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
   ],
@@ -54,15 +54,15 @@ exports[`features/eslint run react should add a config change 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
   ],
@@ -93,15 +93,15 @@ exports[`features/eslint run vue should add a config change 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": [Function],
     },
   ],

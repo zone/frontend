@@ -32,7 +32,7 @@ if (silent) {
     type: 'checkbox',
     message: 'What features do you need?',
     choices,
-    default: ['editorConfig'],
+    default: choices.map(({ value }) => value),
   })
 
   // Filter out any unselected features
