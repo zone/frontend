@@ -33,7 +33,7 @@
     "eslint-plugin-vue": "^5.1.0"
   },
   "peerDependencies": {
-    "eslint": "^5.15.0",
+    "eslint": "^5.0.0",
     "eslint-plugin-compat": "^2.0.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-vue": "^5.1.0"
