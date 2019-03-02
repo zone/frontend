@@ -42,6 +42,7 @@
     "ora": "^3.0.0"
   },
   "devDependencies": {
+    "eslint": "^5.15.0",
     "stream": "^0.0.2"
   }
 }
