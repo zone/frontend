@@ -21,7 +21,7 @@ See `./packages/*` for individual package installation details.
 
 ## Install
 
-If you're looking for a easier way to get these configs in your project, be sure to check out [Zoneify](zoneify).
+If you're looking for a easier way to get these configs in your project, be sure to check out [Zoneify][zoneify].
 
 Using NPM's NPX tool, you can use it without install, just run `npx zoneify`.
 
