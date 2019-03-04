@@ -1,6 +1,6 @@
 {
   "name": "zoneify",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "This package provides a way to install Zone tools and configs.",
   "main": "./src/index.js",
   "repository": "github:zone/frontend",
@@ -39,7 +39,7 @@
     "inquirer": "^6.2.0",
     "invariant": "^2.2.4",
     "kleur": "^3.0.1",
-    "ora": "^3.0.0"
+    "ora": "^3.2.0"
   },
   "devDependencies": {
     "stream": "^0.0.2"
