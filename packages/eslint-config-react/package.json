@@ -27,7 +27,6 @@
     "@zonedigital/eslint-config-zone": "^4.2.3"
   },
   "devDependencies": {
-    "eslint": "^5.15.0",
     "eslint-plugin-compat": "^3.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-react": "^7.12.2",

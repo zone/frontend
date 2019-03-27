@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "eslint": "^5.15.1",
+    "eslint": "^5.15.3",
     "jest": "^24.5.0",
     "jest-serializer-path": "^0.1.15",
     "lerna": "^3.13.1",
