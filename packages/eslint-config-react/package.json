@@ -29,7 +29,7 @@
   "devDependencies": {
     "eslint-plugin-compat": "^3.0.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-react": "^7.12.2",
+    "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.5.1"
   },
   "peerDependencies": {
