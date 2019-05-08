@@ -1,6 +1,6 @@
 {
   "name": "@zonedigital/eslint-config-react",
-  "version": "4.2.4",
+  "version": "4.3.0",
   "description": "This package provides Zone's JavaScript style guide for React as an extensible shared config.",
   "main": "index.js",
   "repository": "github:zone/frontend",
@@ -21,22 +21,22 @@
     "access": "public"
   },
   "engines": {
-    "node": "^8 || ^10 || ^11"
+    "node": "^8 || ^10 || ^12"
   },
   "dependencies": {
-    "@zonedigital/eslint-config-zone": "^4.2.4"
+    "@zonedigital/eslint-config-zone": "^4.3.0"
   },
   "devDependencies": {
     "eslint-plugin-compat": "^3.0.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-react": "^7.12.2",
+    "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.5.1"
   },
   "peerDependencies": {
     "eslint": "^5.0.0",
     "eslint-plugin-compat": "^3.0.0",
     "eslint-plugin-import": "^2.0.0",
-    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.5.1"
   }
 }
