@@ -20,7 +20,7 @@
     "access": "public"
   },
   "engines": {
-    "node": "^8 || ^10 || ^12"
+    "node": "^10 || ^12"
   },
   "dependencies": {
     "stylelint-config-standard": "^18.2.0"
