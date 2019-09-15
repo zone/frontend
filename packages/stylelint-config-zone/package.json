@@ -23,7 +23,7 @@
     "node": "^8 || ^10 || ^12"
   },
   "dependencies": {
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-standard": "^19.0.0"
   },
   "devDependencies": {
     "stylelint": "^10.0.1"
