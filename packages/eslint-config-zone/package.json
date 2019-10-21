@@ -23,7 +23,10 @@
     "node": "^8 || ^10 || ^12"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^14.0.0"
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2"
   },
   "devDependencies": {
     "eslint-plugin-compat": "^3.0.0",
