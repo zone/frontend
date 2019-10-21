@@ -8,6 +8,6 @@ describe(NPM_PACKAGE, () => {
       configFile: require.resolve('./index.js'),
     })
 
-    expect(cli.getConfigForFile()).toMatchSnapshot()
+    expect(cli.getConfigForFile('./index.js')).toMatchSnapshot()
   })
 })
