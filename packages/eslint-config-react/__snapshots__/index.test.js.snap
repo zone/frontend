@@ -20,10 +20,10 @@ Object {
     "sourceType": "module",
   },
   "plugins": Array [
-    "react",
     "import",
     "prettier",
     "compat",
+    "react",
     "react-hooks",
   ],
   "reportUnusedDisableDirectives": undefined,
