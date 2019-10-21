@@ -30,11 +30,14 @@
     "eslint-plugin-compat": "^3.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-vue": "^5.1.0"
+    "eslint": "^6.5.1",
+    "prettier": "^1.18.2"
   },
   "peerDependencies": {
     "eslint": "^6.0.0",
     "eslint-plugin-compat": "^3.0.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-vue": "^5.1.0"
+    "prettier": "^1.0.0"
   }
 }
