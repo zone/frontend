@@ -29,7 +29,7 @@
   "devDependencies": {
     "eslint-plugin-compat": "^3.0.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-vue": "^5.1.0"
+    "eslint-plugin-vue": "^6.0.0"
   },
   "peerDependencies": {
     "eslint": "^6.0.0",
