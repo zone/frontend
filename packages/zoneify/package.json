@@ -34,7 +34,7 @@
     }
   },
   "dependencies": {
-    "commander": "^3.0.0",
+    "commander": "^4.0.1",
     "glob": "^7.1.4",
     "inquirer": "^7.0.0",
     "invariant": "^2.2.4",
