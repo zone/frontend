@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:react/recommended', '@zonedigital/eslint-config-zone'],
+  extends: ['@zonedigital/eslint-config-zone', 'plugin:react/recommended'],
   plugins: ['react-hooks'],
   rules: {
     'react-hooks/exhaustive-deps': 'warn',
