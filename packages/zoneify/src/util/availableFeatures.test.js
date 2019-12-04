@@ -1,7 +1,7 @@
 const availableFeatures = require('./availableFeatures')
 
 describe('availableFeatures', () => {
-  it('should return all available features', () => {
+  it('returns all available features', () => {
     expect(availableFeatures).toMatchSnapshot()
   })
 })

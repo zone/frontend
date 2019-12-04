@@ -16,7 +16,7 @@ describe('resolveSerial', () => {
     })
   })
 
-  it('should execute next promise once the current has resolved', async () => {
+  it('executes the next promise once the current has resolved', async () => {
     const returnedValues = await resolveSerial(promises)
 
     expect(returnedValues).toEqual([4, 2])

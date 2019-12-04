@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`availableFeatures should return all available features 1`] = `
+exports[`availableFeatures returns all available features 1`] = `
 Array [
   Object {
     "id": "browserslist",

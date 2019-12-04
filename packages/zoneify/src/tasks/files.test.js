@@ -6,15 +6,21 @@ jest.mock('../util/fileSystem')
 writeFile.mockName('writeFile')
 
 describe('tasks/files', () => {
-  it('should resolve if queue is empty', async () => {
+  it('resolves if queue is empty', async () => {
     expect(await run()).toBeUndefined()
   })
 
-  it('should enqueue a file', async () => {
+  it('enqueues a file', async () => {
     writeFile.mockResolvedValue()
 
     add({ payload: { fileName: 'test1.md', content: 'test' } })
-    add({ payload: { fileName: 'test2.md', filePath: './test/test', content: 'test' } })
+    add({
+      payload: {
+        fileName: 'test2.md',
+        filePath: './test/test',
+        content: 'test',
+      },
+    })
 
     const result = await run()
 
@@ -23,7 +29,7 @@ describe('tasks/files', () => {
     expect(result.length).toBe(2)
   })
 
-  it('should handle thrown errors', async () => {
+  it('handles thrown errors', async () => {
     writeFile.mockRejectedValue()
 
     add({ payload: { fileName: 'test1.md', content: 'test' } })

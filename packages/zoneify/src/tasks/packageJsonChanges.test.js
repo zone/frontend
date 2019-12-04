@@ -1,4 +1,4 @@
-const { add, run } = require('./packageJsonChanges')
+const { /* add, */ run } = require('./packageJsonChanges')
 const { readFile } = require('../util/fileSystem')
 
 jest.mock('../util/fileSystem')
@@ -6,7 +6,7 @@ jest.mock('../util/fileSystem')
 readFile.mockName('readFile')
 
 describe('tasks/packageJsonChanges', () => {
-  it('should resolve if queue is empty', async () => {
+  it('resolves if queue is empty', async () => {
     expect(await run()).toBeUndefined()
   })
 
@@ -20,16 +20,16 @@ describe('tasks/packageJsonChanges', () => {
   //   expect(result.length).toBe(2)
   // })
 
-  describe('read package.json', () => {
-    it('should error if the file cannot be read', async () => {
+  describe('reads package.json', () => {
+    it('errors if the file cannot be read', async () => {
       readFile.mockRejectedValueOnce('rejected')
 
       await readFile().catch(error => expect(error).toBe('rejected'))
     })
 
-    it('should error if file contents cannot be parsed as JSON', () => {})
+    it.todo('errors if file contents cannot be parsed as JSON')
 
-    it('should return parsed JSON contents', () => {})
+    it.todo('returns parsed JSON contents')
   })
 
   // read file

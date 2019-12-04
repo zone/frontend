@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`@zonedigital/eslint-config-zone should provide a config 1`] = `
+exports[`@zonedigital/eslint-config-zone provides a config 1`] = `
 Object {
   "env": Object {
     "browser": true,

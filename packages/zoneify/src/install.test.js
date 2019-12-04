@@ -1,5 +1,8 @@
 const {
-  addPackageJsonChange, addDependency, addFile, run,
+  addPackageJsonChange,
+  addDependency,
+  addFile,
+  run,
 } = require('./install')
 const files = require('./tasks/files')
 const { spinner } = require('./util/logger')
@@ -10,15 +13,15 @@ jest.mock('./util/logger')
 jest.mock('./util/prompt')
 
 describe('install', () => {
-  it('should export addPackageJsonChange as a function', () => {
+  it('exports addPackageJsonChange as a function', () => {
     expect(typeof addPackageJsonChange).toBe('function')
   })
 
-  it('should export addDependency as a function', () => {
+  it('exports addDependency as a function', () => {
     expect(typeof addDependency).toBe('function')
   })
 
-  it('should export addFile as a function', () => {
+  it('exports addFile as a function', () => {
     expect(typeof addFile).toBe('function')
   })
 
@@ -28,7 +31,9 @@ describe('install', () => {
       questions,
       run: featureRun || jest.fn().mockName('featureRun'),
     })
-    const featureNoQuestions = mockFeature({ name: 'feature without questions' })
+    const featureNoQuestions = mockFeature({
+      name: 'feature without questions',
+    })
     const featureWithQuestions = mockFeature({
       name: 'feature with questions',
       questions: [
@@ -41,7 +46,7 @@ describe('install', () => {
       ],
     })
 
-    it('should log a success', async () => {
+    it('logs a success', async () => {
       files.run.mockImplementation(() => Promise.resolve('resolve'))
 
       await run([featureNoQuestions])
@@ -49,7 +54,7 @@ describe('install', () => {
       expect(spinner.succeed).toBeCalledWith('Done')
     })
 
-    it('should log a failure', async () => {
+    it('logs a failure', async () => {
       /* eslint-disable-next-line prefer-promise-reject-errors */
       files.run.mockImplementation(() => Promise.reject('reject'))
 
@@ -58,14 +63,14 @@ describe('install', () => {
       expect(spinner.fail).toBeCalledWith('reject')
     })
 
-    it('should call each feature', async () => {
+    it('calls each feature', async () => {
       await run([featureNoQuestions, featureWithQuestions])
 
       expect(featureNoQuestions.run).toBeCalled()
       expect(featureWithQuestions.run).toBeCalled()
     })
 
-    it('should prompt the user if the feature has questions', () => {
+    it('prompts the user if the feature has questions', () => {
       expect(prompt).toBeCalledWith(featureWithQuestions.questions)
     })
   })
