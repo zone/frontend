@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@zonedigital/eslint-config-zone": "^4.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^2.0.0"
   },
