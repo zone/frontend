@@ -1,7 +1,7 @@
 const prompt = require('./prompt')
 
 describe('prompt', () => {
-  it('should return a prompt', () => {
+  it('returns a prompt', () => {
     expect(typeof prompt).toBe('function')
   })
 })

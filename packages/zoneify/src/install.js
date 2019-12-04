@@ -22,7 +22,8 @@ const runFeature = ({ name, questions, run }) => async () => {
 
 const runTask = ({ run }) => async () => run()
 
-const withContext = func => payload => func({ payload, context: featureContext })
+const withContext = func => payload =>
+  func({ payload, context: featureContext })
 
 exports.addDependency = withContext(dependencies.add)
 
@@ -30,7 +31,7 @@ exports.addFile = withContext(files.add)
 
 exports.addPackageJsonChange = withContext(packageJsonChanges.add)
 
-exports.run = async (features) => {
+exports.run = async features => {
   log.debug('Running features')
 
   // Wait for each feature to run

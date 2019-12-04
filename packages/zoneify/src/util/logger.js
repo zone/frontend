@@ -23,7 +23,7 @@ const formatter = ({ level, message }) => {
   }
 }
 
-const logMessage = level => (message) => {
+const logMessage = level => message => {
   if (levels[level] > logLevel) {
     return
   }
@@ -45,9 +45,14 @@ const logMessage = level => (message) => {
 }
 
 const log = {
-  ...Object.keys(levels).reduce((logger, level) => ({ ...logger, [level]: logMessage(level) }), {}),
+  ...Object.keys(levels).reduce(
+    (logger, level) => ({ ...logger, [level]: logMessage(level) }),
+    {}
+  ),
   get level() {
-    const [level] = Object.entries(levels).find(([, value]) => value === logLevel)
+    const [level] = Object.entries(levels).find(
+      ([, value]) => value === logLevel
+    )
 
     return level
   },

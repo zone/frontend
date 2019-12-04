@@ -23,7 +23,7 @@ if (silent) {
 }
 
 // Closure to allow for async/await
-(async () => {
+;(async () => {
   const choices = availableFeatures.map(({ id, name }) => ({ name, value: id }))
 
   // Wait for user to provide a list of feature IDs
@@ -36,7 +36,9 @@ if (silent) {
   })
 
   // Filter out any unselected features
-  const selectedFeatures = availableFeatures.filter(({ id }) => selectedFeatureIds.includes(id))
+  const selectedFeatures = availableFeatures.filter(({ id }) =>
+    selectedFeatureIds.includes(id)
+  )
 
   // Run install
   await run(selectedFeatures)

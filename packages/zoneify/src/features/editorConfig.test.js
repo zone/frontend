@@ -4,22 +4,22 @@ const { name, questions, run } = require('./editorConfig')
 jest.mock('../install')
 
 describe('features/editorConfig', () => {
-  it('should have a name', () => {
+  it('has a name', () => {
     expect(name).toMatchSnapshot()
   })
 
-  it('should have no questions', () => {
+  it('has no questions', () => {
     expect(questions).toMatchSnapshot()
   })
 
   describe('run', () => {
     run()
 
-    it('should have a run function', () => {
+    it('has a run function', () => {
       expect(typeof run).toBe('function')
     })
 
-    it('should add a file', () => {
+    it('adds a file', () => {
       expect(addFile).toMatchSnapshot()
     })
   })

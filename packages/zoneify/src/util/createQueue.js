@@ -2,7 +2,7 @@ module.exports = () => {
   let queue = []
 
   return {
-    enqueue: (payload) => {
+    enqueue: payload => {
       queue.push(payload)
     },
     dequeue: () => queue.shift(),

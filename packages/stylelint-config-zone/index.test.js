@@ -2,7 +2,7 @@ const stylelint = require('stylelint')
 const { name: NPM_PACKAGE } = require('./package.json')
 
 describe(NPM_PACKAGE, () => {
-  it('should not error', () => {
+  it('config does not error', () => {
     expect.assertions(1)
 
     const results = stylelint.lint({

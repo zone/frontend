@@ -26,6 +26,6 @@ Add the following to your `package.json`
 
 ```json
 "browserslist": [
-    "extends @zonedigital/browserslist-config"
+  "extends @zonedigital/browserslist-config"
 ]
 ```

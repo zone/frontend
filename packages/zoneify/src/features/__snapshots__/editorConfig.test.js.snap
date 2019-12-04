@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`features/editorConfig run should add a file 1`] = `
+exports[`features/editorConfig has a name 1`] = `"EditorConfig"`;
+
+exports[`features/editorConfig has no questions 1`] = `undefined`;
+
+exports[`features/editorConfig run adds a file 1`] = `
 [MockFunction addFile] {
   "calls": Array [
     Array [
@@ -30,7 +34,3 @@ trim_trailing_whitespace = false",
   ],
 }
 `;
-
-exports[`features/editorConfig should have a name 1`] = `"EditorConfig"`;
-
-exports[`features/editorConfig should have no questions 1`] = `undefined`;

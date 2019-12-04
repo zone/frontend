@@ -19,18 +19,22 @@ exports.run = async () => {
 
   log.debug('Adding files...')
 
-  const workInProgress = queue.items.map(({ fileName, filePath = './', content }) => {
-    log.debug(`Adding file ${fileName}`)
+  const workInProgress = queue.items.map(
+    ({ fileName, filePath = './', content }) => {
+      log.debug(`Adding file ${fileName}`)
 
-    const destinationPath = path.join(process.cwd(), filePath)
-    const destination = path.join(destinationPath, fileName)
+      const destinationPath = path.join(process.cwd(), filePath)
+      const destination = path.join(destinationPath, fileName)
 
-    return writeFile(destination, content).catch(() => {
-      throw new Error(
-        `Could not write ${bold(fileName)}.\nCheck ${bold(destinationPath)} exists and is writable.`,
-      )
-    })
-  })
+      return writeFile(destination, content).catch(() => {
+        throw new Error(
+          `Could not write ${bold(fileName)}.\nCheck ${bold(
+            destinationPath
+          )} exists and is writable.`
+        )
+      })
+    }
+  )
 
   return Promise.all(workInProgress)
 }

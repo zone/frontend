@@ -8,14 +8,14 @@ const execAsync = promisify(exec)
 
 const nameWithVersion = ({ name, version = 'latest' }) => `${name}@${version}`
 
-const findPeerDependencies = async (packageName) => {
+const findPeerDependencies = async packageName => {
   spinner.start('Looking up peer dependencies...')
   // Execute the `npm view` command to get a JSON formatted list of the package's
   // peer dependencies, this requires NPM to trigger a network request so use
   // a Promise to control the flow
   const { stdout: data } = await execAsync(
-    `npm view "${packageName}" peerDependencies --json`,
-  ).catch((error) => {
+    `npm view "${packageName}" peerDependencies --json`
+  ).catch(error => {
     log.error(error)
 
     // node couldn't execute the command
@@ -72,10 +72,12 @@ exports.run = async () => {
       const peerDependencies = await findPeerDependencies(packageName)
 
       return [packageName, ...peerDependencies]
-    },
+    }
   )
   const result = await Promise.all(workInProgress)
-  const allDependencies = result.reduce((all, item) => all.concat(item), []).join(' ')
+  const allDependencies = result
+    .reduce((all, item) => all.concat(item), [])
+    .join(' ')
 
   log.debug('Installing dependencies')
 
@@ -83,7 +85,7 @@ exports.run = async () => {
 
   return execAsync(`yarn add ${allDependencies}`)
     .then(() => spinner.stop())
-    .catch((error) => {
+    .catch(error => {
       log.error(error)
       throw new Error('Unable to install dependencies, check your connection')
     })

@@ -1,13 +1,12 @@
 /* eslint-disable no-console */
 const PassThroughStream = require('stream').PassThrough
-const {
-  formatter, log, levels, spinner,
-} = require('./logger')
+const { formatter, log, levels, spinner } = require('./logger')
 
 global.console = {
   log: jest.fn(),
 }
 
+const levelKeys = Object.keys(levels)
 const start = jest.spyOn(spinner, 'start')
 const stop = jest.spyOn(spinner, 'stop')
 const getPassThroughStream = () => {
@@ -31,52 +30,50 @@ describe('logger', () => {
   const errorOutput = formatter({ level: 'error', message })
   const infoOutput = formatter({ level: 'info', message })
 
-  it('should have log levels', () => {
+  it('has log levels', () => {
     expect(levels).toMatchSnapshot()
   })
 
-  it('should a default log level of info', () => {
+  it('defaults log level to "info"', () => {
     expect(log.level).toBe('info')
   })
 
-  Object.keys(levels).forEach((level) => {
-    it(`should have a method for ${level}`, () => {
-      expect(typeof log[level]).toBe('function')
-    })
-
-    it(`should set the log level to ${level}`, () => {
-      log.level = level
-      expect(log.level).toBe(level)
-    })
+  it.each(levelKeys)('has a method for %s', level => {
+    expect(typeof log[level]).toBe('function')
   })
 
-  it('should set not change the log level', () => {
+  it.each(levelKeys)('sets the log level to %s', level => {
+    log.level = level
+    expect(log.level).toBe(level)
+  })
+
+  it('does not accept accept and invalid log level', () => {
     const originalLevel = log.level
 
     log.level = 'hello world'
     expect(log.level).toBe(originalLevel)
   })
 
-  it('should format debug logs', () => {
+  it('formats debug logs', () => {
     expect(debugOutput).toMatchSnapshot()
   })
 
-  it('should format info logs', () => {
+  it('formats info logs', () => {
     expect(infoOutput).toMatchSnapshot()
   })
 
-  it('should format error logs', () => {
+  it('formats error logs', () => {
     expect(errorOutput).toMatchSnapshot()
   })
 
-  it('should format error/info/debug logs differently', () => {
+  it('formats error/info/debug logs differently', () => {
     expect(debugOutput).not.toEqual(infoOutput)
     expect(debugOutput).not.toEqual(errorOutput)
     expect(errorOutput).not.toEqual(infoOutput)
   })
   const spinnerMessage = 'Test'
 
-  it('should start/stop the spinner', () => {
+  it('starts and stops the spinner', () => {
     spinner.start(spinnerMessage)
     spinner.isSpinning = true
     log.info('Test')
@@ -88,13 +85,13 @@ describe('logger', () => {
     stop.mockReset()
   })
 
-  it('should not start/stop the spinner', () => {
+  it('does not start and stop the spinner', () => {
     log.info('Test')
     expect(stop).not.toBeCalled()
     expect(start).not.toBeCalledWith(spinnerMessage)
   })
 
-  it('should not log debug messages when info', () => {
+  it('does not log debug messages when info', () => {
     log.level = 'info'
     expect(log.level).toBe('info')
     log.debug('Test debug')

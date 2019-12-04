@@ -23,24 +23,32 @@ exports.run = async () => {
   const destinationPath = process.cwd()
   const destination = path.join(destinationPath, fileName)
   const initialPackageJson = await readFile(destination)
-    .catch((error) => {
-      log.error(error)
-      throw new Error(`Could not read ${bold(fileName)}.\nCheck it exists and is readable.`)
-    })
-    .then(content => JSON.parse(content))
-    .catch((error) => {
+    .catch(error => {
       log.error(error)
       throw new Error(
-        `Could not parse ${bold(fileName)}.\nCheck it has been initalised via 'npm init'.`,
+        `Could not read ${bold(fileName)}.\nCheck it exists and is readable.`
+      )
+    })
+    .then(content => JSON.parse(content))
+    .catch(error => {
+      log.error(error)
+      throw new Error(
+        `Could not parse ${bold(
+          fileName
+        )}.\nCheck it has been initalised via 'npm init'.`
       )
     })
   const workInProgress = queue.items.reduce(
     (previous, reducer) => reducer(previous),
-    initialPackageJson,
+    initialPackageJson
   )
   const newContent = await Promise.resolve(workInProgress)
 
-  return writeFile(destination, JSON.stringify(newContent, null, 2)).catch(() => {
-    throw new Error(`Could not write ${fileName}, check ${destinationPath} exists and writable.`)
-  })
+  return writeFile(destination, JSON.stringify(newContent, null, 2)).catch(
+    () => {
+      throw new Error(
+        `Could not write ${fileName}, check ${destinationPath} exists and writable.`
+      )
+    }
+  )
 }

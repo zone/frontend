@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`features/stylelint run should add a config change 1`] = `
+exports[`features/stylelint has a name 1`] = `"stylelint"`;
+
+exports[`features/stylelint has no questions 1`] = `undefined`;
+
+exports[`features/stylelint run adds a config change 1`] = `
 [MockFunction addPackageJsonChange] {
   "calls": Array [
     Array [
@@ -16,7 +20,7 @@ exports[`features/stylelint run should add a config change 1`] = `
 }
 `;
 
-exports[`features/stylelint run should add a config change 2`] = `
+exports[`features/stylelint run adds a config change 2`] = `
 Object {
   "name": "test package",
   "stylelint": Object {
@@ -24,7 +28,3 @@ Object {
   },
 }
 `;
-
-exports[`features/stylelint should have a name 1`] = `"stylelint"`;
-
-exports[`features/stylelint should have no questions 1`] = `undefined`;

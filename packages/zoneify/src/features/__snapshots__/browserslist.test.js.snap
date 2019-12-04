@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`features/browserslist run should add a config change 1`] = `
+exports[`features/browserslist has a name 1`] = `"Browserslist"`;
+
+exports[`features/browserslist has no questions 1`] = `undefined`;
+
+exports[`features/browserslist run adds a config change 1`] = `
 [MockFunction addPackageJsonChange] {
   "calls": Array [
     Array [
@@ -16,7 +20,7 @@ exports[`features/browserslist run should add a config change 1`] = `
 }
 `;
 
-exports[`features/browserslist run should add a config change 2`] = `
+exports[`features/browserslist run adds a config change 2`] = `
 Object {
   "browserslist": Array [
     "extends @zonedigital/browserslist-config",
@@ -24,7 +28,3 @@ Object {
   "name": "test package",
 }
 `;
-
-exports[`features/browserslist should have a name 1`] = `"Browserslist"`;
-
-exports[`features/browserslist should have no questions 1`] = `undefined`;
