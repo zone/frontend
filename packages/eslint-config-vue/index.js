@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:vue/recommended', '@zonedigital/eslint-config-zone'],
+  extends: ['@zonedigital/eslint-config-zone', 'plugin:vue/recommended'],
   rules: {
     'vue/attribute-hyphenation': 'error',
     'vue/html-closing-bracket-spacing': 'error',
