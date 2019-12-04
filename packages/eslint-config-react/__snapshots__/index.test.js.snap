@@ -8,6 +8,7 @@ Object {
     "node": true,
   },
   "globals": Object {},
+  "ignorePatterns": Array [],
   "noInlineConfig": undefined,
   "parser": null,
   "parserOptions": Object {
@@ -92,6 +93,7 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
+        "ignoreImports": false,
         "properties": "never",
       },
     ],
@@ -703,6 +705,7 @@ Object {
     "jsx-a11y/no-noninteractive-tabindex": Array [
       "error",
       Object {
+        "allowExpressionValues": true,
         "roles": Array [
           "tabpanel",
         ],
@@ -718,6 +721,7 @@ Object {
     "jsx-a11y/no-static-element-interactions": Array [
       "error",
       Object {
+        "allowExpressionValues": true,
         "handlers": Array [
           "onClick",
           "onMouseDown",
@@ -759,15 +763,12 @@ Object {
         "overrides": Object {
           "case": Object {
             "after": true,
-            "before": true,
           },
           "return": Object {
             "after": true,
-            "before": true,
           },
           "throw": Object {
             "after": true,
-            "before": true,
           },
         },
       },
@@ -1499,6 +1500,7 @@ Object {
         "allow": Array [],
         "allowAfterSuper": false,
         "allowAfterThis": false,
+        "allowAfterThisConstructor": false,
         "enforceInMethodNames": true,
       },
     ],

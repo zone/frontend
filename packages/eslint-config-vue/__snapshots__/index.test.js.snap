@@ -8,6 +8,7 @@ Object {
     "node": true,
   },
   "globals": Object {},
+  "ignorePatterns": Array [],
   "noInlineConfig": undefined,
   "parser": "<PROJECT_ROOT>/node_modules/vue-eslint-parser/index.js",
   "parserOptions": Object {
@@ -90,6 +91,7 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
+        "ignoreImports": false,
         "properties": "never",
       },
     ],
@@ -528,15 +530,12 @@ Object {
         "overrides": Object {
           "case": Object {
             "after": true,
-            "before": true,
           },
           "return": Object {
             "after": true,
-            "before": true,
           },
           "throw": Object {
             "after": true,
-            "before": true,
           },
         },
       },
@@ -1268,6 +1267,7 @@ Object {
         "allow": Array [],
         "allowAfterSuper": false,
         "allowAfterThis": false,
+        "allowAfterThisConstructor": false,
         "enforceInMethodNames": true,
       },
     ],
