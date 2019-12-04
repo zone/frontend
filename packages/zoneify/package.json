@@ -21,7 +21,7 @@
     "access": "public"
   },
   "engines": {
-    "node": "^8 || ^10 || ^12"
+    "node": ">=10"
   },
   "bin": "./src/index.js",
   "eslintConfig": {
