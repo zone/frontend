@@ -1,15 +1,17 @@
-const stylelint = require('stylelint')
+const { exec } = require('child_process')
+const { promisify } = require('util')
 const { name: NPM_PACKAGE } = require('./package.json')
 
+const execAsync = promisify(exec)
+
 describe(NPM_PACKAGE, () => {
-  it('config does not error', () => {
-    expect.assertions(1)
+  it('config does not error', async () => {
+    const { stdout } = await execAsync(
+      `./node_modules/.bin/stylelint index.scss --printConfig --config=${require.resolve(
+        './index.js'
+      )}`
+    )
 
-    const results = stylelint.lint({
-      code: 'body { color: #000; }\n',
-      configFile: require.resolve('./index.js'),
-    })
-
-    return results.then(data => expect(data.errored).toBeFalsy())
+    expect(JSON.parse(stdout)).toMatchSnapshot()
   })
 })
