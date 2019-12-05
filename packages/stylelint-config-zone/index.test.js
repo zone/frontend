@@ -12,6 +12,6 @@ describe(NPM_PACKAGE, () => {
       )}`
     )
 
-    expect(stdout).toMatchSnapshot()
+    expect(JSON.parse(stdout)).toMatchSnapshot()
   })
 })
