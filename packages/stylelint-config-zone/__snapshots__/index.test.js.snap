@@ -166,6 +166,7 @@ Object {
     "length-zero-no-unit": Array [
       true,
     ],
+    "linebreaks": null,
     "max-empty-lines": null,
     "max-line-length": null,
     "media-feature-colon-space-after": Array [
@@ -200,6 +201,7 @@ Object {
     "no-duplicate-selectors": Array [
       true,
     ],
+    "no-empty-first-line": null,
     "no-empty-source": Array [
       true,
     ],
@@ -265,6 +267,7 @@ Object {
     "string-quotes": Array [
       "single",
     ],
+    "unicode-bom": null,
     "unit-case": null,
     "unit-no-unknown": Array [
       true,
