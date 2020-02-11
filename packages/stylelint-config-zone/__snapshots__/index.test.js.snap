@@ -272,6 +272,9 @@ Object {
     "unit-no-unknown": Array [
       true,
     ],
+    "value-keyword-case": Array [
+      "lower",
+    ],
     "value-list-comma-newline-after": null,
     "value-list-comma-newline-before": null,
     "value-list-comma-space-after": null,
