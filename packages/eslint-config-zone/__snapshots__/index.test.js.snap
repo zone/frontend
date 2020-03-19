@@ -181,6 +181,9 @@ Object {
         "commentPattern": "^no default$",
       },
     ],
+    "default-param-last": Array [
+      "off",
+    ],
     "dot-location": Array [
       "off",
       "property",
@@ -227,6 +230,7 @@ Object {
     ],
     "function-call-argument-newline": Array [
       "off",
+      "consistent",
     ],
     "function-paren-newline": Array [
       "off",
@@ -250,6 +254,9 @@ Object {
     ],
     "global-require": Array [
       "error",
+    ],
+    "grouped-accessor-pairs": Array [
+      "off",
     ],
     "guard-for-in": Array [
       "error",
@@ -381,6 +388,7 @@ Object {
           "**/Gruntfile{,.js}",
           "**/protractor.conf.js",
           "**/protractor.conf.*.js",
+          "**/karma.conf.js",
         ],
         "optionalDependencies": false,
       },
@@ -441,6 +449,9 @@ Object {
     ],
     "import/no-useless-path-segments": Array [
       "error",
+      Object {
+        "commonjs": true,
+      },
     ],
     "import/no-webpack-loader-syntax": Array [
       "error",
@@ -496,6 +507,9 @@ Object {
           "JSXExpressionContainer",
           "JSXOpeningElement",
           "JSXClosingElement",
+          "JSXFragment",
+          "JSXOpeningFragment",
+          "JSXClosingFragment",
           "JSXText",
           "JSXEmptyExpression",
           "JSXSpreadChild",
@@ -716,6 +730,9 @@ Object {
     "no-constant-condition": Array [
       "warn",
     ],
+    "no-constructor-return": Array [
+      "off",
+    ],
     "no-continue": Array [
       "error",
     ],
@@ -736,6 +753,9 @@ Object {
     ],
     "no-dupe-class-members": Array [
       "error",
+    ],
+    "no-dupe-else-if": Array [
+      "off",
     ],
     "no-dupe-keys": Array [
       "error",
@@ -835,6 +855,9 @@ Object {
     ],
     "no-implied-eval": Array [
       "error",
+    ],
+    "no-import-assign": Array [
+      "off",
     ],
     "no-inline-comments": Array [
       "off",
@@ -1210,6 +1233,9 @@ Object {
     "no-sequences": Array [
       "error",
     ],
+    "no-setter-return": Array [
+      "off",
+    ],
     "no-shadow": Array [
       "error",
     ],
@@ -1502,6 +1528,9 @@ Object {
         "enforceForRenamedProperties": false,
       },
     ],
+    "prefer-exponentiation-operator": Array [
+      "off",
+    ],
     "prefer-named-capture-group": Array [
       "off",
     ],
@@ -1518,6 +1547,9 @@ Object {
       },
     ],
     "prefer-reflect": Array [
+      "off",
+    ],
+    "prefer-regex-literals": Array [
       "off",
     ],
     "prefer-rest-params": Array [
