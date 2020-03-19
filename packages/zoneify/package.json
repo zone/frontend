@@ -1,6 +1,6 @@
 {
   "name": "zoneify",
-  "version": "5.0.0",
+  "version": "5.0.3",
   "description": "This package provides a way to install Zone tools and configs.",
   "main": "./src/index.js",
   "repository": "github:zone/frontend",
