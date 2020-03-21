@@ -35,6 +35,6 @@
   },
   "peerDependencies": {
     "eslint": "^6.0.0",
-    "prettier": "^1.0.0"
+    "prettier": "^2.0.0"
   }
 }
