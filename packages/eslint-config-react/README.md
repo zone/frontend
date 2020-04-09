@@ -8,7 +8,7 @@
 [npm-url]: https://npmjs.org/package/@zonedigital/eslint-config-react
 [downloads-image]: https://img.shields.io/npm/dm/@zonedigital/eslint-config-react.svg?style=flat-square
 
-This package provides Zone's JavaScript style guide for React as an extensible shared config. It extends [Zones base config](https://github.com/zone/frontend/tree/master/packages/eslint-config-zone).
+This package provides Zone's JavaScript style guide for React as an extensible shared config. It installs and extends [Zones base config](https://github.com/zone/frontend/tree/master/packages/eslint-config-zone), see this package for additional installation details.
 
 ## Installation
 
@@ -24,13 +24,3 @@ Add the Zone rules to your eslint config. Be sure to add as the last item.
   // ... project config here, if any ...
 }
 ```
-
-### Compat
-
-This config uses [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat). It lints the browser compatibility of your code via [Browserslist](https://github.com/browserslist/browserslist).
-
-#### Adding polyfills
-
-If for example you are using `fetch` and it is not supported by all the browsers in your support matrix then you can add a polyfill. To tell the linter you have done this, [add a reference to the polyfill](https://github.com/amilajack/eslint-plugin-compat/wiki/Adding-polyfills).
-
-**Optional but recommended:** Remove duplicated rules from your eslint config.
