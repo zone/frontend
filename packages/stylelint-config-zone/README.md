@@ -24,5 +24,3 @@ Add the Zone config to your stylelint config. Be sure to add as the last item.
   // ... project config here, if any ...
 }
 ```
-
-**Optional but recommended:** Remove duplicated rules from your stylelint config.

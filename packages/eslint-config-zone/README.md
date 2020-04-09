@@ -32,5 +32,3 @@ This config uses [eslint-plugin-compat](https://github.com/amilajack/eslint-plug
 #### Adding polyfills
 
 If for example you are using `fetch` and it is not supported by all the browsers in your support matrix then you can add a polyfill. To tell the linter you have done this, [add a reference to the polyfill](https://github.com/amilajack/eslint-plugin-compat/wiki/Adding-polyfills).
-
-**Optional but recommended:** Remove duplicated rules from your eslint config.
