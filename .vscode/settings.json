@@ -1,0 +1,21 @@
+{
+  "cSpell.words": [
+    "zonedigital",
+    "browserslist",
+    "stylelint",
+    "Firefox",
+    "Compat",
+    "checkbox"
+  ],
+  "cSpell.language": "en-GB",
+  "files.exclude": {
+    "**/yarn.lock": true,
+    "**/*.log": true
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#2C2B39",
+    "titleBar.inactiveForeground": "#FFFFFF",
+    "titleBar.activeBackground": "#86E8CC",
+    "titleBar.inactiveBackground": "#2C2B39"
+  }
+}
