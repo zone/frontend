@@ -12,12 +12,6 @@ This package provides Zone's JavaScript style guide as an extensible shared conf
 
 ## Installation
 
-### Yarn
-
-`yarn add @zonedigital/eslint-config-zone`
-
-### NPM
-
 `npm i @zonedigital/eslint-config-zone`
 
 ## Usage

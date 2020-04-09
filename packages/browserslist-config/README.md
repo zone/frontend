@@ -12,12 +12,6 @@ This package provides Zone's browser matrix as a shared config.
 
 ## Installation
 
-### Yarn
-
-`yarn add @zonedigital/browserslist-config`
-
-### NPM
-
 `npm i @zonedigital/browserslist-config`
 
 ## Usage

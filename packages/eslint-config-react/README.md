@@ -12,12 +12,6 @@ This package provides Zone's JavaScript style guide for React as an extensible s
 
 ## Installation
 
-### Yarn
-
-`yarn add @zonedigital/eslint-config-react`
-
-### NPM
-
 `npm i @zonedigital/eslint-config-react`
 
 ## Usage

@@ -12,12 +12,6 @@ This package provides Zone's CSS style guide as an extensible shared config.
 
 ## Installation
 
-### Yarn
-
-`yarn add @zonedigital/stylelint-config-zone`
-
-### NPM
-
 `npm i @zonedigital/stylelint-config-zone`
 
 ## Usage

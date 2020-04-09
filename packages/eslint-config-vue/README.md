@@ -12,12 +12,6 @@ This package provides Zone's JavaScript style guide for Vue as an extensible sha
 
 ## Installation
 
-### Yarn
-
-`yarn add @zonedigital/eslint-config-vue`
-
-### NPM
-
 `npm i @zonedigital/eslint-config-vue`
 
 ## Usage
