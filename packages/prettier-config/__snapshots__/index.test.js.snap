@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@zonedigital/prettier-config provides a config 1`] = `
+Object {
+  "arrowParens": "avoid",
+  "singleQuote": true,
+  "tabWidth": 2,
+}
+`;
