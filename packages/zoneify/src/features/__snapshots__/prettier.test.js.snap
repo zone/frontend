@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`features/prettier has a name 1`] = `"Prettier"`;
+
+exports[`features/prettier has no questions 1`] = `undefined`;
+
+exports[`features/prettier run adds a config change 1`] = `
+[MockFunction addPackageJsonChange] {
+  "calls": Array [
+    Array [
+      [Function],
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`features/prettier run adds a config change 2`] = `
+Object {
+  "name": "test package",
+  "prettier": "@zonedigital/prettier-config",
+}
+`;
