@@ -1,14 +1,14 @@
-const { /* add, */ run } = require('./packageJsonChanges')
-const { readFile } = require('../util/fileSystem')
+const { /* add, */ run } = require('./packageJsonChanges');
+const { readFile } = require('../util/fileSystem');
 
-jest.mock('../util/fileSystem')
+jest.mock('../util/fileSystem');
 
-readFile.mockName('readFile')
+readFile.mockName('readFile');
 
 describe('tasks/packageJsonChanges', () => {
   it('resolves if queue is empty', async () => {
-    expect(await run()).toBeUndefined()
-  })
+    expect(await run()).toBeUndefined();
+  });
 
   // it('should enqueue a change', async () => {
   //   add({ payload: { fileName: 'test1.md', content: 'test' } })
@@ -22,15 +22,15 @@ describe('tasks/packageJsonChanges', () => {
 
   describe('reads package.json', () => {
     it('errors if the file cannot be read', async () => {
-      readFile.mockRejectedValueOnce('rejected')
+      readFile.mockRejectedValueOnce('rejected');
 
-      await readFile().catch(error => expect(error).toBe('rejected'))
-    })
+      await readFile().catch(error => expect(error).toBe('rejected'));
+    });
 
-    it.todo('errors if file contents cannot be parsed as JSON')
+    it.todo('errors if file contents cannot be parsed as JSON');
 
-    it.todo('returns parsed JSON contents')
-  })
+    it.todo('returns parsed JSON contents');
+  });
 
   // read file
   // - error
@@ -43,4 +43,4 @@ describe('tasks/packageJsonChanges', () => {
   // write file
   // - success
   // - error
-})
+});

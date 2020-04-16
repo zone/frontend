@@ -23,7 +23,6 @@
   "prettier": {
     "arrowParens": "avoid",
     "tabWidth": 2,
-    "semi": false,
     "singleQuote": true,
     "trailingComma": "es5"
   },
@@ -34,12 +33,6 @@
     },
     "ignorePatterns": [
       "node_modules/"
-    ],
-    "rules": {
-      "semi": [
-        "error",
-        "never"
-      ]
-    }
+    ]
   }
 }

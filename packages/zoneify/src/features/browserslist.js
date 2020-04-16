@@ -1,13 +1,13 @@
-const { addDependency, addPackageJsonChange } = require('../install')
+const { addDependency, addPackageJsonChange } = require('../install');
 
-exports.name = 'Browserslist'
+exports.name = 'Browserslist';
 
 exports.run = () => {
-  const packageName = '@zonedigital/browserslist-config'
+  const packageName = '@zonedigital/browserslist-config';
 
-  addDependency({ name: packageName })
+  addDependency({ name: packageName });
   addPackageJsonChange(current => ({
     ...current,
     browserslist: [`extends ${packageName}`],
-  }))
-}
+  }));
+};

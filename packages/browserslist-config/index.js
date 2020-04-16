@@ -7,4 +7,4 @@ module.exports = [
   'ios >= 10',
   'last 1 ChromeAndroid version',
   'last 1 ExplorerMobile version',
-]
+];
