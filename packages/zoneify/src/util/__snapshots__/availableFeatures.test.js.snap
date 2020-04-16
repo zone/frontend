@@ -41,6 +41,12 @@ Array [
     "run": [Function],
   },
   Object {
+    "id": "prettier",
+    "name": "Prettier",
+    "questions": undefined,
+    "run": [Function],
+  },
+  Object {
     "id": "stylelint",
     "name": "stylelint",
     "questions": undefined,
