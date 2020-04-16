@@ -20,9 +20,9 @@
       "jest-serializer-path"
     ]
   },
-  "prettier": "./packages/prettier-config/index.json",
+  "prettier": "@zonedigital/prettier-config",
   "eslintConfig": {
-    "extends": "./packages/eslint-config-zone/index.js",
+    "extends": "@zonedigital/eslint-config-zone",
     "env": {
       "jest": true
     },
