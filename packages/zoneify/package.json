@@ -4,7 +4,7 @@
   "description": "This package provides a way to install Zone tools and configs.",
   "main": "./src/index.js",
   "repository": "github:zone/frontend",
-  "author": "Mike Simmonds (https://simmo.codes)",
+  "author": "Mike Simmonds (https://mike.id)",
   "license": "MIT",
   "bugs": "https://github.com/zone/frontend/issues",
   "homepage": "https://github.com/zone/frontend/tree/master/packages/zoneify#readme",

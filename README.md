@@ -16,6 +16,7 @@ See `./packages/*` for individual package installation details.
 | [eslint-config-react]   | Base+React JavaScript style guide |
 | [eslint-config-vue]     | Base+Vue JavaScript style guide   |
 | [eslint-config-zone]    | Base JavaScript style guide       |
+| [prettier-config]       | Prettier config                   |
 | [stylelint-config-zone] | Base CSS style guide              |
 | [zoneify]               | Config CLI tool                   |
 
@@ -37,6 +38,7 @@ Be sure to check that all the [Travis CI][url-travis] build jobs have passed.
 [eslint-config-react]: https://github.com/zone/frontend/tree/master/packages/eslint-config-react
 [eslint-config-vue]: https://github.com/zone/frontend/tree/master/packages/eslint-config-vue
 [eslint-config-zone]: https://github.com/zone/frontend/tree/master/packages/eslint-config-zone
+[prettier-config]: https://github.com/zone/frontend/tree/master/packages/prettier-config
 [zoneify]: https://github.com/zone/frontend/tree/master/packages/zoneify
 [stylelint-config-zone]: https://github.com/zone/frontend/tree/master/packages/stylelint-config-zone
 [img-lerna]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square
