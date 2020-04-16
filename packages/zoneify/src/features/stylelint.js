@@ -1,15 +1,15 @@
-const { addDependency, addPackageJsonChange } = require('../install')
+const { addDependency, addPackageJsonChange } = require('../install');
 
-exports.name = 'stylelint'
+exports.name = 'stylelint';
 
 exports.run = () => {
-  const packageName = '@zonedigital/stylelint-config-zone'
+  const packageName = '@zonedigital/stylelint-config-zone';
 
-  addDependency({ name: packageName, includePeerDependencies: true })
+  addDependency({ name: packageName, includePeerDependencies: true });
   addPackageJsonChange(current => ({
     ...current,
     stylelint: {
       extends: packageName,
     },
-  }))
-}
+  }));
+};

@@ -1,6 +1,6 @@
-const { addDependency, addPackageJsonChange } = require('../install')
+const { addDependency, addPackageJsonChange } = require('../install');
 
-exports.name = 'ESLint'
+exports.name = 'ESLint';
 
 exports.questions = [
   {
@@ -13,16 +13,16 @@ exports.questions = [
       { name: 'Vue', value: 'vue' },
     ],
   },
-]
+];
 
 exports.run = ({ framework }) => {
-  const packageName = `@zonedigital/eslint-config-${framework}`
+  const packageName = `@zonedigital/eslint-config-${framework}`;
 
-  addDependency({ name: packageName, includePeerDependencies: true })
+  addDependency({ name: packageName, includePeerDependencies: true });
   addPackageJsonChange(current => ({
     ...current,
     eslintConfig: {
       extends: packageName,
     },
-  }))
-}
+  }));
+};

@@ -1,4 +1,4 @@
-const { addFile } = require('../install')
+const { addFile } = require('../install');
 
 const content = `# editorconfig.org
 root = true
@@ -12,10 +12,10 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
-trim_trailing_whitespace = false`
+trim_trailing_whitespace = false`;
 
-exports.name = 'EditorConfig'
+exports.name = 'EditorConfig';
 
 exports.run = () => {
-  addFile({ fileName: '.editorConfig', content })
-}
+  addFile({ fileName: '.editorConfig', content });
+};

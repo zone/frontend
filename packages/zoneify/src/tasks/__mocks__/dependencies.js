@@ -1,3 +1,3 @@
-exports.add = jest.fn().mockName('dependencies.add')
+exports.add = jest.fn().mockName('dependencies.add');
 
-exports.run = jest.fn().mockName('dependencies.run')
+exports.run = jest.fn().mockName('dependencies.run');

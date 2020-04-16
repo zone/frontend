@@ -1,19 +1,19 @@
 module.exports = () => {
-  let queue = []
+  let queue = [];
 
   return {
     enqueue: payload => {
-      queue.push(payload)
+      queue.push(payload);
     },
     dequeue: () => queue.shift(),
     clear: () => {
-      queue = []
+      queue = [];
     },
     get items() {
-      return queue
+      return queue;
     },
     get size() {
-      return queue.length
+      return queue.length;
     },
-  }
-}
+  };
+};

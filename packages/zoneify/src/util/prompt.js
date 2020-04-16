@@ -1,3 +1,3 @@
-const prompt = require('inquirer').createPromptModule()
+const prompt = require('inquirer').createPromptModule();
 
-module.exports = prompt
+module.exports = prompt;

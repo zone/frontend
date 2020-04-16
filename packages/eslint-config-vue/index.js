@@ -24,4 +24,4 @@ module.exports = {
     'vue/v-bind-style': 'error',
     'vue/v-on-style': 'error',
   },
-}
+};

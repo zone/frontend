@@ -19,4 +19,4 @@ module.exports = {
     'selector-attribute-quotes': 'always',
     'string-quotes': 'single',
   },
-}
+};
