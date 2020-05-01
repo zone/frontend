@@ -20,7 +20,7 @@ Add the Zone rules to your eslint config. Be sure to add as the last item.
 
 ```javascript
 {
-  "extends": [..., "@zonedigital/typescript"],
+  "extends": [..., "@zonedigital/eslint-config-typescript"],
   // ... project config here, if any ...
 }
 ```
