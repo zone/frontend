@@ -10,15 +10,16 @@ Mono repo for Zone's frontend setup and tooling.
 
 See `./packages/*` for individual package installation details.
 
-| Package                 | Description                       |
-| ----------------------- | --------------------------------- |
-| [browserslist-config]   | Browserslist browser matrix       |
-| [eslint-config-react]   | Base+React JavaScript style guide |
-| [eslint-config-vue]     | Base+Vue JavaScript style guide   |
-| [eslint-config-zone]    | Base JavaScript style guide       |
-| [prettier-config]       | Prettier config                   |
-| [stylelint-config-zone] | Base CSS style guide              |
-| [zoneify]               | Config CLI tool                   |
+| Package                    | Description                       |
+| -------------------------- | --------------------------------- |
+| [browserslist-config]      | Browserslist browser matrix       |
+| [eslint-config-react]      | Base+React JavaScript style guide |
+| [eslint-config-typescript] | Base TypeScript style guide       |
+| [eslint-config-vue]        | Base+Vue JavaScript style guide   |
+| [eslint-config-zone]       | Base JavaScript style guide       |
+| [prettier-config]          | Prettier config                   |
+| [stylelint-config-zone]    | Base CSS style guide              |
+| [zoneify]                  | Config CLI tool                   |
 
 ## Install
 
@@ -28,6 +29,7 @@ Using NPM's NPX tool, you can use it without install, just run `npx zoneify`.
 
 [browserslist-config]: https://github.com/zone/frontend/tree/master/packages/browserslist-config
 [eslint-config-react]: https://github.com/zone/frontend/tree/master/packages/eslint-config-react
+[eslint-config-typescript]: https://github.com/zone/frontend/tree/master/packages/eslint-config-typescript
 [eslint-config-vue]: https://github.com/zone/frontend/tree/master/packages/eslint-config-vue
 [eslint-config-zone]: https://github.com/zone/frontend/tree/master/packages/eslint-config-zone
 [prettier-config]: https://github.com/zone/frontend/tree/master/packages/prettier-config
