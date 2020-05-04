@@ -52,7 +52,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/explicit-function-return-type": Array [
-      "off",
+      "warn",
     ],
     "@typescript-eslint/func-call-spacing": Array [
       "off",
