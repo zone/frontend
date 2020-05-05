@@ -1,6 +1,6 @@
 {
   "name": "@zonedigital/eslint-config-typescript",
-  "version": "0.0.0",
+  "version": "5.2.0",
   "description": "This package provides Zone's TypeScript style guide as an extensible shared config.",
   "main": "index.js",
   "repository": "github:zone/frontend",
@@ -26,7 +26,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
-    "@zonedigital/eslint-config-zone": "^5.0.3"
+    "@zonedigital/eslint-config-zone": "^5.2.0"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
