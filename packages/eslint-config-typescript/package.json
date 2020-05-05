@@ -1,0 +1,41 @@
+{
+  "name": "@zonedigital/eslint-config-typescript",
+  "version": "0.0.0",
+  "description": "This package provides Zone's TypeScript style guide as an extensible shared config.",
+  "main": "index.js",
+  "repository": "github:zone/frontend",
+  "author": "Mike Simmonds (https://mike.id)",
+  "license": "MIT",
+  "bugs": "https://github.com/zone/frontend/issues",
+  "homepage": "https://github.com/zone/frontend/tree/master/packages/eslint-config-typescript#readme",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintrc",
+    "typescript"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "@zonedigital/eslint-config-zone": "^5.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "eslint": "^6.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "prettier": "^2.0.0"
+  }
+}
