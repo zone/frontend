@@ -63,6 +63,9 @@ Object {
     "@typescript-eslint/interface-name-prefix": Array [
       "error",
     ],
+    "@typescript-eslint/keyword-spacing": Array [
+      "off",
+    ],
     "@typescript-eslint/member-delimiter-style": Array [
       "off",
     ],
@@ -281,6 +284,9 @@ Object {
         "commentPattern": "^no default$",
       },
     ],
+    "default-case-last": Array [
+      "off",
+    ],
     "default-param-last": Array [
       "off",
     ],
@@ -418,7 +424,7 @@ Object {
       },
     ],
     "import/named": Array [
-      "error",
+      "off",
     ],
     "import/namespace": Array [
       "off",
@@ -449,6 +455,7 @@ Object {
     "import/no-cycle": Array [
       "error",
       Object {
+        "ignoreExternal": false,
         "maxDepth": Infinity,
       },
     ],
@@ -996,6 +1003,9 @@ Object {
     "no-loop-func": Array [
       "error",
     ],
+    "no-loss-of-precision": Array [
+      "off",
+    ],
     "no-magic-numbers": Array [
       "off",
       Object {
@@ -1079,8 +1089,8 @@ Object {
     "no-multiple-empty-lines": Array [
       "off",
       Object {
-        "max": 2,
-        "maxBOF": 1,
+        "max": 1,
+        "maxBOF": 0,
         "maxEOF": 0,
       },
     ],
@@ -1131,6 +1141,7 @@ Object {
           "accumulator",
           "e",
           "ctx",
+          "context",
           "req",
           "request",
           "res",
@@ -1167,6 +1178,15 @@ Object {
     ],
     "no-reserved-keys": Array [
       "off",
+    ],
+    "no-restricted-exports": Array [
+      "off",
+      Object {
+        "restrictedNamedExports": Array [
+          "default",
+          "then",
+        ],
+      },
     ],
     "no-restricted-globals": Array [
       "error",
@@ -1442,6 +1462,9 @@ Object {
         "functions": true,
         "variables": true,
       },
+    ],
+    "no-useless-backreference": Array [
+      "off",
     ],
     "no-useless-call": Array [
       "off",
@@ -1814,6 +1837,7 @@ Object {
           "markers": Array [
             "=",
             "!",
+            "/",
           ],
         },
       },
