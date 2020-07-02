@@ -19,3 +19,4 @@ Be sure to check that all the [Travis CI][url-travis] build jobs have passed.
 
 [url-yarn-workspaces]: https://yarnpkg.com/lang/en/docs/workspaces/
 [url-lerna]: https://lernajs.io/
+[url-travis]: https://travis-ci.com/zone/frontend
