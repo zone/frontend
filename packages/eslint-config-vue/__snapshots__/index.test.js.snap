@@ -1799,35 +1799,59 @@ Object {
     "vars-on-top": Array [
       "error",
     ],
+    "vue/array-bracket-spacing": Array [
+      "off",
+    ],
+    "vue/arrow-spacing": Array [
+      "off",
+    ],
     "vue/attribute-hyphenation": Array [
       "error",
     ],
     "vue/attributes-order": Array [
       "warn",
     ],
+    "vue/block-spacing": Array [
+      "off",
+    ],
+    "vue/brace-style": Array [
+      "off",
+    ],
+    "vue/comma-dangle": Array [
+      "off",
+    ],
     "vue/comment-directive": Array [
       "error",
     ],
+    "vue/dot-location": Array [
+      "off",
+    ],
     "vue/html-closing-bracket-newline": Array [
-      "warn",
+      "off",
     ],
     "vue/html-closing-bracket-spacing": Array [
       "error",
     ],
     "vue/html-end-tags": Array [
-      "warn",
+      "off",
     ],
     "vue/html-indent": Array [
       "error",
     ],
     "vue/html-quotes": Array [
-      "warn",
+      "off",
     ],
     "vue/html-self-closing": Array [
-      "warn",
+      0,
     ],
     "vue/jsx-uses-vars": Array [
       "error",
+    ],
+    "vue/key-spacing": Array [
+      "off",
+    ],
+    "vue/keyword-spacing": Array [
+      "off",
     ],
     "vue/max-attributes-per-line": Array [
       "error",
@@ -1838,6 +1862,9 @@ Object {
         },
         "singleline": 3,
       },
+    ],
+    "vue/max-len": Array [
+      0,
     ],
     "vue/multiline-html-element-content-newline": Array [
       "error",
@@ -1896,6 +1923,9 @@ Object {
     "vue/no-v-html": Array [
       "warn",
     ],
+    "vue/object-curly-spacing": Array [
+      "off",
+    ],
     "vue/order-in-components": Array [
       "error",
     ],
@@ -1926,8 +1956,17 @@ Object {
     "vue/return-in-computed-property": Array [
       "error",
     ],
+    "vue/script-indent": Array [
+      "off",
+    ],
     "vue/singleline-html-element-content-newline": Array [
-      "warn",
+      "off",
+    ],
+    "vue/space-infix-ops": Array [
+      "off",
+    ],
+    "vue/space-unary-ops": Array [
+      "off",
     ],
     "vue/this-in-template": Array [
       "error",
