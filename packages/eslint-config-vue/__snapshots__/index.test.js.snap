@@ -272,6 +272,9 @@ Object {
     "id-blacklist": Array [
       "off",
     ],
+    "id-denylist": Array [
+      "off",
+    ],
     "id-length": Array [
       "off",
     ],
@@ -355,7 +358,7 @@ Object {
       "error",
       Object {
         "ignoreExternal": false,
-        "maxDepth": Infinity,
+        "maxDepth": "∞",
       },
     ],
     "import/no-default-export": Array [
@@ -1063,6 +1066,9 @@ Object {
     "no-process-exit": Array [
       "off",
     ],
+    "no-promise-executor-return": Array [
+      "off",
+    ],
     "no-proto": Array [
       "error",
     ],
@@ -1089,8 +1095,14 @@ Object {
     ],
     "no-restricted-globals": Array [
       "error",
-      "isFinite",
-      "isNaN",
+      Object {
+        "message": "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
+        "name": "isFinite",
+      },
+      Object {
+        "message": "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
+        "name": "isNaN",
+      },
       "addEventListener",
       "blur",
       "close",
@@ -1328,6 +1340,12 @@ Object {
     ],
     "no-unreachable": Array [
       "error",
+    ],
+    "no-unreachable-loop": Array [
+      "off",
+      Object {
+        "ignore": Array [],
+      },
     ],
     "no-unsafe-finally": Array [
       "error",
