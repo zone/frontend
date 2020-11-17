@@ -1,11 +1,15 @@
 module.exports = {
-  extends: ['airbnb-base', 'plugin:prettier/recommended'],
-  env: {
-    browser: true,
+  extends: [
+    'eslint-config-airbnb-base',
+    'plugin:prettier/recommended',
+    'plugin:compat/recommended',
+  ],
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
   },
   rules: {
     'brace-style': ['error', '1tbs', { allowSingleLine: false }],
-    'compat/compat': 'warn',
     complexity: ['error', 10],
     curly: ['error', 'all'],
     'max-len': [
@@ -27,5 +31,20 @@ module.exports = {
       { blankLine: 'any', prev: ['const', 'let'], next: ['const', 'let'] },
     ],
   },
-  plugins: ['compat'],
+  plugins: ['import'],
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'plugin:import/typescript',
+        'prettier/@typescript-eslint',
+      ],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off',
+      },
+    },
+  ],
 };

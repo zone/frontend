@@ -24,7 +24,7 @@
   },
   "prettier": "@zonedigital/prettier-config",
   "eslintConfig": {
-    "extends": "@zonedigital/eslint-config-zone",
+    "extends": "@zonedigital/eslint-config",
     "env": {
       "jest": true
     },
