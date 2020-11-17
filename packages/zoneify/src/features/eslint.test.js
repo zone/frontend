@@ -4,82 +4,45 @@ const { name, questions, run } = require('./eslint');
 jest.mock('../install');
 
 describe('features/eslint', () => {
-  it('has a name', () => {
+  test('exports a name', () => {
     expect(name).toMatchSnapshot();
   });
 
-  it('has questions', () => {
+  test('exports questions', () => {
     expect(questions).toMatchSnapshot();
   });
 
-  describe('run', () => {
-    const testPackageJson = { name: 'test package' };
+  test('exports run function', () => {
+    expect(typeof run).toBe('function');
+  });
 
-    it('has a run function', () => {
-      expect(typeof run).toBe('function');
+  describe.each([
+    ['no framework', '', '@zonedigital/eslint-config'],
+    ['React', 'react', '@zonedigital/eslint-config/react'],
+    ['Vue', 'vue', '@zonedigital/eslint-config/vue'],
+  ])('runs with %s selected', (option, framework, configPath) => {
+    beforeAll(() => {
+      addDependency.mockReset();
+      addPackageJsonChange.mockReset().mockImplementation(cb => cb);
+
+      run({ framework });
     });
 
-    describe('no framework', () => {
-      run({ framework: 'zone' });
-
-      it('adds a dependency', () => {
-        expect(addDependency).toBeCalledWith({
-          name: '@zonedigital/eslint-config-zone',
-          includePeerDependencies: true,
-        });
-      });
-
-      it('adds a config change', () => {
-        expect(addPackageJsonChange).toMatchSnapshot();
-        expect(typeof addPackageJsonChange.mock.results[0].value).toBe(
-          'function'
-        );
-        expect(
-          addPackageJsonChange.mock.results[0].value(testPackageJson)
-        ).toMatchSnapshot();
+    test('adds a dependency', () => {
+      expect(addDependency).toBeCalledWith({
+        name: '@zonedigital/eslint-config',
+        includePeerDependencies: true,
       });
     });
 
-    describe('react', () => {
-      run({ framework: 'react' });
-
-      it('adds a dependency', () => {
-        expect(addDependency).toBeCalledWith({
-          name: '@zonedigital/eslint-config-zone',
-          includePeerDependencies: true,
-        });
-      });
-
-      it('adds a config change', () => {
-        expect(addPackageJsonChange).toMatchSnapshot();
-        expect(typeof addPackageJsonChange.mock.results[0].value).toBe(
-          'function'
-        );
-        expect(
-          addPackageJsonChange.mock.results[0].value(testPackageJson)
-        ).toMatchSnapshot();
-      });
-    });
-
-    describe('vue', () => {
-      run({ framework: 'vue' });
-
-      it('adds a dependency', () => {
-        expect(addDependency).toBeCalledWith({
-          name: '@zonedigital/eslint-config-zone',
-          includePeerDependencies: true,
-        });
-      });
-
-      it('adds a config change', () => {
-        addPackageJsonChange.mockReturnValue(() => 'hello');
-        expect(addPackageJsonChange).toMatchSnapshot();
-        expect(typeof addPackageJsonChange.mock.results[0].value).toBe(
-          'function'
-        );
-        expect(
-          addPackageJsonChange.mock.results[0].value(testPackageJson)
-        ).toMatchSnapshot();
+    test('adds a config change', () => {
+      expect(
+        addPackageJsonChange.mock.results[0].value({ name: 'test package' })
+      ).toEqual({
+        name: 'test package',
+        eslintConfig: {
+          extends: configPath,
+        },
       });
     });
   });

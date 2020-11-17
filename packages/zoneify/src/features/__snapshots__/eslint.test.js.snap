@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`features/eslint has a name 1`] = `"ESLint"`;
+exports[`features/eslint exports a name 1`] = `"ESLint"`;
 
-exports[`features/eslint has questions 1`] = `
+exports[`features/eslint exports questions 1`] = `
 Array [
   Object {
     "choices": Array [
       Object {
         "name": "None",
-        "value": "zone",
+        "value": "",
       },
       Object {
         "name": "React",
@@ -24,121 +24,4 @@ Array [
     "type": "list",
   },
 ]
-`;
-
-exports[`features/eslint run no framework adds a config change 1`] = `
-[MockFunction addPackageJsonChange] {
-  "calls": Array [
-    Array [
-      [Function],
-    ],
-    Array [
-      [Function],
-    ],
-    Array [
-      [Function],
-    ],
-  ],
-  "results": Array [
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-  ],
-}
-`;
-
-exports[`features/eslint run no framework adds a config change 2`] = `
-Object {
-  "eslintConfig": Object {
-    "extends": "@zonedigital/eslint-config-zone",
-  },
-  "name": "test package",
-}
-`;
-
-exports[`features/eslint run react adds a config change 1`] = `
-[MockFunction addPackageJsonChange] {
-  "calls": Array [
-    Array [
-      [Function],
-    ],
-    Array [
-      [Function],
-    ],
-    Array [
-      [Function],
-    ],
-  ],
-  "results": Array [
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-  ],
-}
-`;
-
-exports[`features/eslint run react adds a config change 2`] = `
-Object {
-  "eslintConfig": Object {
-    "extends": "@zonedigital/eslint-config-zone",
-  },
-  "name": "test package",
-}
-`;
-
-exports[`features/eslint run vue adds a config change 1`] = `
-[MockFunction addPackageJsonChange] {
-  "calls": Array [
-    Array [
-      [Function],
-    ],
-    Array [
-      [Function],
-    ],
-    Array [
-      [Function],
-    ],
-  ],
-  "results": Array [
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-    Object {
-      "type": "return",
-      "value": [Function],
-    },
-  ],
-}
-`;
-
-exports[`features/eslint run vue adds a config change 2`] = `
-Object {
-  "eslintConfig": Object {
-    "extends": "@zonedigital/eslint-config-zone",
-  },
-  "name": "test package",
-}
 `;

@@ -8,7 +8,7 @@ exports.questions = [
     type: 'list',
     message: 'What type of JS framework are you using?',
     choices: [
-      { name: 'None', value: 'zone' },
+      { name: 'None', value: '' },
       { name: 'React', value: 'react' },
       { name: 'Vue', value: 'vue' },
     ],
@@ -16,13 +16,14 @@ exports.questions = [
 ];
 
 exports.run = ({ framework }) => {
-  const packageName = `@zonedigital/eslint-config-${framework}`;
+  const packageName = '@zonedigital/eslint-config';
+  const config = [packageName, framework].filter(item => !!item).join('/');
 
   addDependency({ name: packageName, includePeerDependencies: true });
   addPackageJsonChange(current => ({
     ...current,
     eslintConfig: {
-      extends: packageName,
+      extends: config,
     },
   }));
 };
