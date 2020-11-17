@@ -7,7 +7,7 @@
   "author": "Mike Simmonds (https://mike.id)",
   "license": "MIT",
   "bugs": "https://github.com/zone/frontend/issues",
-  "homepage": "https://github.com/zone/frontend/tree/master/packages/eslint-config-zone#readme",
+  "homepage": "https://github.com/zone/frontend/tree/master/packages/eslint-config#readme",
   "keywords": [
     "eslint",
     "eslint-config",
