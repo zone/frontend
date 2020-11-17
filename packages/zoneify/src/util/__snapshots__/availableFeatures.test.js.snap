@@ -22,7 +22,7 @@ Array [
         "choices": Array [
           Object {
             "name": "None",
-            "value": "zone",
+            "value": "",
           },
           Object {
             "name": "React",

@@ -9,7 +9,6 @@
   ],
   "cSpell.language": "en-GB",
   "files.exclude": {
-    "**/yarn.lock": true,
     "**/*.log": true
   },
   "workbench.colorCustomizations": {

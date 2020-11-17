@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    '@zonedigital/eslint-config-zone',
-    'plugin:vue/recommended',
-    'prettier/vue',
-  ],
+  extends: ['./', 'plugin:vue/recommended', 'prettier/vue'],
   rules: {
     'vue/attribute-hyphenation': 'error',
     'vue/html-closing-bracket-spacing': 'error',

@@ -5,11 +5,13 @@
     "packages/*"
   ],
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "jest": "^25.1.0",
+    "@types/eslint": "^7.2.5",
+    "@types/jest": "^26.0.15",
+    "eslint": "^7.13.0",
+    "jest": "^26.6.3",
     "jest-serializer-path": "^0.1.15",
     "lerna": "^3.20.2",
-    "prettier": "^2.0.4"
+    "prettier": "^2.1.2"
   },
   "scripts": {
     "lint": "eslint ./packages",
@@ -22,7 +24,7 @@
   },
   "prettier": "@zonedigital/prettier-config",
   "eslintConfig": {
-    "extends": "@zonedigital/eslint-config-zone",
+    "extends": "@zonedigital/eslint-config",
     "env": {
       "jest": true
     },

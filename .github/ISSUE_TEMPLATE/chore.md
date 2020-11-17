@@ -4,7 +4,7 @@ about: A maintenance task to keep the project in order.
 ---
 
 **Package (if applicable)**
-e.g. eslint-config-zone
+e.g. eslint-config
 
 **The task**
 What needs to be done.
