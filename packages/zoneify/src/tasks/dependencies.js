@@ -2,6 +2,7 @@ const { exec } = require('child_process');
 const { promisify } = require('util');
 const { log, spinner } = require('../util/logger');
 const createQueue = require('../util/createQueue');
+const fs = require('fs');
 
 const queue = createQueue();
 const execAsync = promisify(exec);
@@ -82,9 +83,16 @@ exports.run = async () => {
 
   log.debug('Installing dependencies');
 
-  spinner.start('Installing dependencies...');
+  const isYarnProject = fs.existsSync('./yarn.lock');
 
-  return execAsync(`yarn add ${allDependencies}`)
+  let managerExec = `npm install`
+  if (isYarnProject) {
+    managerExec = `yarn add`
+  }
+
+  spinner.start(`Installing dependencies with ${isYarnProject ? 'Yarn' : 'npm'}...`);
+
+  return execAsync(`${managerExec} ${allDependencies}`)
     .then(() => spinner.stop())
     .catch(error => {
       log.error(error);
